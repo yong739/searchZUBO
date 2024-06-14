@@ -210,7 +210,7 @@ lines.sort()
 
 
 
-with open('排序0.txt', 'w', encoding='UTF-8') as f:
+with open('排序.txt', 'w', encoding='UTF-8') as f:
 
     for line in lines:
 
@@ -222,7 +222,7 @@ with open('排序0.txt', 'w', encoding='UTF-8') as f:
 
 #再次替换自定义词为常规词##########################################################################################################################
 
-for line in fileinput.input("排序0.txt", inplace=True):  #打开文件，并对其进行原地替换
+for line in fileinput.input("排序.txt", inplace=True):  #打开文件，并对其进行原地替换
 
     line = line.replace("CCTW10", "CCTV10")
 
@@ -243,22 +243,6 @@ for line in fileinput.input("排序0.txt", inplace=True):  #打开文件，并�
 
 
     print(line, end="")  #设置end=""，避免输出多余的换行符
-
-
-with open('排序0.txt', 'r', encoding="utf-8") as file:    ﻿#打开文档并读取所有行###############   
- lines = file.readlines()
- 
- unique_lines = []                 # 使用列表来存储唯一的行的顺序############### 
- seen_lines = set() 
-
-for line in lines:                 # 遍历每一行，如果是新的就加入unique_lines############### 
- if line not in seen_lines:
-  unique_lines.append(line)
-  seen_lines.add(line)
-
-with open('排序.txt', 'w', encoding="utf-8") as file:          #将唯一的行写入新的文档###############  
- file.writelines(unique_lines)
-
 
 
 #从整理好的文本中按类别进行特定关键词提取#############################################################################################
