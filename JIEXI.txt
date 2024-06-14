@@ -1,6 +1,5 @@
 CCTV2,http://liveop.cctv.cn/hls/CCTV28bee868714f04ea2af79947bb9b46fc3H/playlist.m3u8$BK
 CCTV6,http://mobilelive-ds.ysp.cctv.cn/ysp/2013693901.m3u8$DOUYU
-
 安徽卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.113:5140$ZJ电信2+
 北京卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.107:5140$ZJ电信2+
 东方卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.125:5140$ZJ电信2+
