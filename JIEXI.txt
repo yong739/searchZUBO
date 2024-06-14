@@ -9,7 +9,6 @@ CCTV6,http://mobilelive-ds.ysp.cctv.cn/ysp/2013693901.m3u8$DOUYU
 河北卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.140:5140$ZJ电信2+
 河南卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.144:5140$ZJ电信2+
 黑龙江卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.115:5140$ZJ电信2+
-
 湖北卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.114:5140$ZJ电信2+
 湖南卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.103:5140$ZJ电信2+
 吉林卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.48:5140$ZJ电信2+
