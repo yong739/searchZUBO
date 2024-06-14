@@ -1,9 +1,4 @@
 
-
-
-
-
-
 import time
 
 import concurrent.futures
@@ -28,10 +23,6 @@ import replace
 
 import fileinput
 
-
-
-
-
 # 合并自定义频道文件#################################################################################################
 
 file_contents = []
@@ -47,17 +38,11 @@ for file_path in file_paths:
         file_contents.append(content)
 
 
-
 # 写入合并后的文件
 
 with open("合并.txt", "w", encoding="utf-8") as output:
 
     output.write('\n'.join(file_contents))
-
-    
-
-
-
 
 
 #替换多余的关键字词###################################################################################################
@@ -162,16 +147,11 @@ for line in fileinput.input("合并.txt", inplace=True):  #打开文件，并对
 
 
 
-
-
-
-
 #二次替换某些关键词为便于排序的自定义词####################################################################################################
 
 for line in fileinput.input("合并.txt", inplace=True):  #打开文件，并对其进行原地替换
 
     
-
     line = line.replace("CCTV10", "CCTW10")
 
     line = line.replace("CCTV11", "CCTW11")
@@ -194,8 +174,6 @@ for line in fileinput.input("合并.txt", inplace=True):  #打开文件，并对
 
 
 
-
-
 #对替换完成的文本进行排序#####################################################################################################################
 
 
@@ -205,9 +183,7 @@ with open('合并.txt', 'r', encoding='utf-8') as f:
     lines = f.readlines()
 
 
-
 lines.sort()
-
 
 
 with open('排序.txt', 'w', encoding='UTF-8') as f:
@@ -215,9 +191,6 @@ with open('排序.txt', 'w', encoding='UTF-8') as f:
     for line in lines:
 
         f.write(line)
-
-
-
 
 
 #再次替换自定义词为常规词##########################################################################################################################
