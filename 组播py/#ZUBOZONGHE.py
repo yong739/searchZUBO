@@ -245,23 +245,18 @@ for line in fileinput.input("排序0.txt", inplace=True):  #打开文件，并�
     print(line, end="")  #设置end=""，避免输出多余的换行符
 
 
-
-﻿# 打开文档并读取所有行 
-with open('排序0.txt', 'r', encoding="utf-8") as file:
+with open('排序0.txt', 'r', encoding="utf-8") as file:    ﻿#打开文档并读取所有行###############   
  lines = file.readlines()
  
-# 使用列表来存储唯一的行的顺序 
- unique_lines = [] 
+ unique_lines = []                 # 使用列表来存储唯一的行的顺序############### 
  seen_lines = set() 
 
-# 遍历每一行，如果是新的就加入unique_lines 
-for line in lines:
+for line in lines:                 # 遍历每一行，如果是新的就加入unique_lines############### 
  if line not in seen_lines:
   unique_lines.append(line)
   seen_lines.add(line)
 
-# 将唯一的行写入新的文档 
-with open('排序.txt', 'w', encoding="utf-8") as file:
+with open('排序.txt', 'w', encoding="utf-8") as file:          #将唯一的行写入新的文档###############  
  file.writelines(unique_lines)
 
 
