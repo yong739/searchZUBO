@@ -883,8 +883,8 @@ CHC高清电影,http://home.scanflove.com:7788/rtp/235.254.199.248:7980$CQ电信
 重Q10少-儿频道,http://n1.dddmmh.space:8088/rtp/225.0.4.191:7980$CQ联通1+
 重Q11科教频道,http://n1.dddmmh.space:8088/rtp/225.0.4.193:7980$CQ联通1+
 重Q12汽摩频道,http://n1.dddmmh.space:8088/rtp/225.0.4.195:7980$CQ联通1+
-吉L延边卫视,http://live.ybtvyun.com/video/s10016-6f0dfd97912f/index.m3u8?zjild
-吉L延边卫视,http://live.ybtvyun.com/video/s10006-44f040627ca1/index.m3u8?zjild
+延边卫视,http://live.ybtvyun.com/video/s10016-6f0dfd97912f/index.m3u8?zjild
+延边卫视,http://live.ybtvyun.com/video/s10006-44f040627ca1/index.m3u8?zjild
 吉L延边-1,http://live.ybtvyun.com/video/s10016-af95004b6d1a/index.m3u8?zjild
 吉L延边-2,http://live.cloud.yanews.cn/video/s10001-YATV-2/index.m3u8?zjild
 吉L延边-2,http://live.ybtvyun.com/video/s10006-04819ee234a7/index.m3u8?zjild
