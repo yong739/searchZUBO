@@ -228,17 +228,23 @@ pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个
 
 with open('排序.txt', 'r', encoding='utf-8') as file, open('T1.txt', 'w', encoding='utf-8') as T1:    #####定义临时文件名
 
-
     for line in file:
 
         if re.search(pattern, line):  # 如果行中有任意关键字
 
-         T1.write(line)  # 将该行写入输出文件                                                          #####定义临时文件
+         T1.write(line)  # 将该行写入输出文件 #####定义临时文件
 
-for line in fileinput.input("T1.txt", inplace=True):  #打开文件，并对其进行关键词原地替换                     ###########
+for line in fileinput.input("T1.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
     print(line, end="")  #设置end=""，避免输出多余的换行符          
 
+#新建待合并临时TTxxx.TXT文件并在抬头写入频道编码genre###################
+with open('TT1.txt', 'w', encoding='utf-8') as TT1:    #####定义临时文件名
+
+    TT1.write('\n📺中央卫视数字频道,#genre#\n')        
+ 
+    print(line, end="")  #设置end=""，避免输出多余的换行符 
+#写入完成-进入下一步排序######################
 
 #对相同频道IP排序--域名在前###################
 import re
@@ -271,7 +277,7 @@ def custom_sort_key(item):
 
     return (channel_sort_key, sort_key)
 
-with open('T1.txt', 'r', encoding="utf-8") as input_file, open('T01.txt', 'w', encoding="utf-8") as output_file:
+with open('T1.txt', 'r', encoding="utf-8") as input_file, open('TT1.txt', 'w', encoding="utf-8") as output_file:
     # 读取所有行并存储在列表中
     lines = input_file.readlines()
 
