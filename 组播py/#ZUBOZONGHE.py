@@ -1789,8 +1789,6 @@ with open("OKVERYGOOD.txt", "w", encoding="utf-8") as output:
 
 os.remove("合并.txt")
 
-os.remove("排序0.txt")
-
 os.remove("排序.txt")
 
 os.remove("T1.txt")
