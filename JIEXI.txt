@@ -49,7 +49,7 @@ WS四川卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.139:5140$ZJ电信2+
 WT天津卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.104:5140$ZJ电信2+
 WZ浙江卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.100:5140$ZJ电信2+
 WC重庆卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.143:5140$ZJ电信2+
-金色学堂,http://www.wzxiejian.top:9999/rtp/233.50.201.186:5140$ZJ电信2+
+Y金色学堂,http://www.wzxiejian.top:9999/rtp/233.50.201.186:5140$ZJ电信2+
 兵团卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.72:5140$ZJ电信2+
 WG甘肃卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.149:5140$ZJ电信2+
 WG广西卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.49:5140$ZJ电信2+
@@ -195,7 +195,7 @@ IPTV淘电影,http://badloop.x3322.net:8012/rtp/239.3.1.250:8001$BJ联通5+
 山X60运城科技,http://live.0359tv.com/lsdream/p5eq48m/1000/live.m3u8?zshanxd$天威+
 山X61运城新闻,http://live.0359tv.com/lsdream/ss4Lj11/1000/live.m3u8?zshanxd$天威+
 山X62长子综合,http://zzlive.zzc-media.com:8092/live/xwzh.m3u8?zshanxd$天威+
-金色学堂,http://myxq.leeleelee.press:4022/rtp/239.254.201.182:7227$HB电信2+
+Y金色学堂,http://myxq.leeleelee.press:4022/rtp/239.254.201.182:7227$HB电信2+
 乐游频道,http://myxq.leeleelee.press:4022/rtp/239.254.201.200:6356$HB电信2+
 河B01九屏HD,http://myxq.leeleelee.press:4022/rtp/239.254.200.248:6000$HB电信2+
 河B02睛彩HD,http://myxq.leeleelee.press:4022/rtp/239.254.200.27:6000$HB电信2+
@@ -632,7 +632,7 @@ IPTV淘电影,http://badloop.x3322.net:8012/rtp/239.3.1.250:8001$BJ联通5+
 湖N长沙政法,http://mail.jiandjh.top:4022/udp/239.76.253.122:9000$HNA电信9Q11+
 动漫秀场,http://85657322.xyz:2000/rtp/239.16.10.234:2000$HENAN电信2+
 动漫秀场,http://85657322.xyz:2000/rtp/239.16.20.40:10400$HENAN电信2+
-金色学堂,http://85657322.xyz:2000/rtp/239.16.20.115:11150$HENAN电信2+
+Y金色学堂,http://85657322.xyz:2000/rtp/239.16.20.115:11150$HENAN电信2+
 河N都市HD,http://85657322.xyz:2000/rtp/239.16.20.164:11640$HENAN电信2+
 河N民生HD,http://85657322.xyz:2000/rtp/239.16.20.165:11650$HENAN电信2+
 河N法治HD,http://85657322.xyz:2000/rtp/239.16.20.166:11660$HENAN电信2+
