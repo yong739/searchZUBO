@@ -3226,8 +3226,8 @@ IPTV淘电影,http://badloop.x3322.net:8012/rtp/239.3.1.250:8001$BJ联通5+
 湖N常德新闻,http://www.tk1986.top:8888/udp/239.76.255.10:9000$HNA电信9Q4+
 湖N郴州新闻,http://www.tk1986.top:8888/udp/239.76.253.75:9000$HNA电信9Q4+
 湖N道县综合,http://www.tk1986.top:8888/udp/239.76.255.28:9000$HNA电信9Q4+
-湖N动漫秀场,http://www.tk1986.top:8888/udp/239.76.253.124:9000$HNA电信9Q4+
-湖N动漫秀场,http://www.tk1986.top:8888/udp/239.76.253.218:9000$HNA电信9Q4+
+动漫秀场,http://www.tk1986.top:8888/udp/239.76.253.124:9000$HNA电信9Q4+
+动漫秀场,http://www.tk1986.top:8888/udp/239.76.253.218:9000$HNA电信9Q4+
 湖N桂东融媒,http://www.tk1986.top:8888/udp/239.76.253.231:9000$HNA电信9Q4+
 湖N衡阳公共,http://www.tk1986.top:8888/udp/239.76.255.14:9000$HNA电信9Q4+
 湖N衡阳县台,http://www.tk1986.top:8888/udp/239.76.255.26:9000$HNA电信9Q4+
@@ -3260,8 +3260,8 @@ IPTV淘电影,http://badloop.x3322.net:8012/rtp/239.3.1.250:8001$BJ联通5+
 湖N常德新闻,http://demo1.ruisilink.top:9000/udp/239.76.255.10:9000$HNA电信9Q3+
 湖N郴州新闻,http://demo1.ruisilink.top:9000/udp/239.76.253.75:9000$HNA电信9Q3+
 湖N道县综合,http://demo1.ruisilink.top:9000/udp/239.76.255.28:9000$HNA电信9Q3+
-湖N动漫秀场,http://demo1.ruisilink.top:9000/udp/239.76.253.124:9000$HNA电信9Q3+
-湖N动漫秀场,http://demo1.ruisilink.top:9000/udp/239.76.253.218:9000$HNA电信9Q3+
+动漫秀场,http://demo1.ruisilink.top:9000/udp/239.76.253.124:9000$HNA电信9Q3+
+动漫秀场,http://demo1.ruisilink.top:9000/udp/239.76.253.218:9000$HNA电信9Q3+
 湖N桂东融媒,http://demo1.ruisilink.top:9000/udp/239.76.253.231:9000$HNA电信9Q3+
 湖N衡阳公共,http://demo1.ruisilink.top:9000/udp/239.76.255.14:9000$HNA电信9Q3+
 湖N衡阳县台,http://demo1.ruisilink.top:9000/udp/239.76.255.26:9000$HNA电信9Q3+
@@ -3294,8 +3294,8 @@ IPTV淘电影,http://badloop.x3322.net:8012/rtp/239.3.1.250:8001$BJ联通5+
 湖N常德新闻,http://www.yao87.com:4022/udp/239.76.255.10:9000$HNA电信9Q2+
 湖N郴州新闻,http://www.yao87.com:4022/udp/239.76.253.75:9000$HNA电信9Q2+
 湖N道县综合,http://www.yao87.com:4022/udp/239.76.255.28:9000$HNA电信9Q2+
-湖N动漫秀场,http://www.yao87.com:4022/udp/239.76.253.124:9000$HNA电信9Q2+
-湖N动漫秀场,http://www.yao87.com:4022/udp/239.76.253.218:9000$HNA电信9Q2+
+动漫秀场,http://www.yao87.com:4022/udp/239.76.253.124:9000$HNA电信9Q2+
+动漫秀场,http://www.yao87.com:4022/udp/239.76.253.218:9000$HNA电信9Q2+
 湖N桂东融媒,http://www.yao87.com:4022/udp/239.76.253.231:9000$HNA电信9Q2+
 湖N衡阳公共,http://www.yao87.com:4022/udp/239.76.255.14:9000$HNA电信9Q2+
 湖N衡阳县台,http://www.yao87.com:4022/udp/239.76.255.26:9000$HNA电信9Q2+
@@ -3328,8 +3328,8 @@ IPTV淘电影,http://badloop.x3322.net:8012/rtp/239.3.1.250:8001$BJ联通5+
 湖N常德新闻,http://mail.jiandjh.top:4022/udp/239.76.255.10:9000$HNA电信9Q11+
 湖N郴州新闻,http://mail.jiandjh.top:4022/udp/239.76.253.75:9000$HNA电信9Q11+
 湖N道县综合,http://mail.jiandjh.top:4022/udp/239.76.255.28:9000$HNA电信9Q11+
-湖N动漫秀场,http://mail.jiandjh.top:4022/udp/239.76.253.124:9000$HNA电信9Q11+
-湖N动漫秀场,http://mail.jiandjh.top:4022/udp/239.76.253.218:9000$HNA电信9Q11+
+动漫秀场,http://mail.jiandjh.top:4022/udp/239.76.253.124:9000$HNA电信9Q11+
+动漫秀场,http://mail.jiandjh.top:4022/udp/239.76.253.218:9000$HNA电信9Q11+
 湖N桂东融媒,http://mail.jiandjh.top:4022/udp/239.76.253.231:9000$HNA电信9Q11+
 湖N衡阳公共,http://mail.jiandjh.top:4022/udp/239.76.255.14:9000$HNA电信9Q11+
 湖N衡阳县台,http://mail.jiandjh.top:4022/udp/239.76.255.26:9000$HNA电信9Q11+
