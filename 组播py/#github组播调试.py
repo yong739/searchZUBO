@@ -291,6 +291,4 @@ with open('T1.txt', 'r', encoding="utf-8") as input_file, open('TT1.txt', 'a', e
         output_file.write(f"{channels}\n")
     sorted_data = sorted(lines, key=custom_sort_key)
 
-    # 将排序后的数据写入输出文件
-    for channels in sorted_data:
-        output_file.write(f"{channels}\n")
+
