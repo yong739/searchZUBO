@@ -774,7 +774,6 @@ CHC高清电影,http://huihaojie.cn:8888/rtp/235.254.199.248:7980$CQ电信2+
 重QG娱乐频道,http://huihaojie.cn:8888/rtp/235.254.198.187:7980$CQ电信2+
 重QH新农村,http://huihaojie.cn:8888/rtp/235.254.198.186:7980$CQ电信2+
 重QI社会与法,http://huihaojie.cn:8888/rtp/235.254.196.210:1112$CQ电信2+
-重QJ少*儿频道,http://huihaojie.cn:8888/rtp/235.254.196.214:1128$CQ电信2+
 重QK科教频道,http://huihaojie.cn:8888/rtp/235.254.196.215:1132$CQ电信2+
 重QL汽摩频道,http://huihaojie.cn:8888/rtp/235.254.196.221:1156$CQ电信2+
 重QP谍战剧场,http://huihaojie.cn:8888/rtp/235.254.198.117:1744$CQ电信2+
@@ -809,7 +808,6 @@ CHC高清电影,http://home.scanflove.com:7788/rtp/235.254.199.248:7980$CQ电信
 重QG娱乐频道,http://home.scanflove.com:7788/rtp/235.254.198.187:7980$CQ电信3+
 重QH新农村,http://home.scanflove.com:7788/rtp/235.254.198.186:7980$CQ电信3+
 重QI社会与法,http://home.scanflove.com:7788/rtp/235.254.196.210:1112$CQ电信3+
-重QJ少儿频道,http://home.scanflove.com:7788/rtp/235.254.196.214:1128$CQ电信3+
 重QK科教频道,http://home.scanflove.com:7788/rtp/235.254.196.215:1132$CQ电信3+
 重QL汽摩频道,http://home.scanflove.com:7788/rtp/235.254.196.221:1156$CQ电信3+
 重QP谍战剧场,http://home.scanflove.com:7788/rtp/235.254.198.117:1744$CQ电信3+
