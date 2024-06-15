@@ -1,4 +1,4 @@
-﻿
+
 import time
 
 import concurrent.futures
@@ -218,7 +218,7 @@ for line in fileinput.input("排序.txt", inplace=True):  #打开文件，并对
     print(line, end="")  #设置end=""，避免输出多余的换行符
 
 
-#开始单个提取#########################
+#开始#########################
 #从整理好的文本中按类别进行特定关键词提取#############################################################################################
 
 keywords = ['CCTV','CETV', 'CF', 'IPTV淘', 'CHC', '凤凰卫视', '卫视', '金鹰卡通', '卡酷少儿', '嘉佳卡通', '哈哈炫动', '乐游频道', '动漫秀场','纪实人文', '金色学堂',  '纪实科教', '金鹰纪实', '求索记录']  # 需要提取的关键字列表
@@ -242,7 +242,7 @@ for line in fileinput.input("T1.txt", inplace=True):  #打开文件，并对其�
 #新建待合并临时TTxxx.TXT文件并在抬头写入频道编码genre###################
 with open('TT1.txt', 'w', encoding='utf-8') as TT1:    #####定义临时文件名
 
-    TT1.write('\n📺中央卫视数字频道,#genre#\n')        
+    TT1.write('\n📺中央卫视数字高清,#genre#\n')        
  
     print(line, end="")  #设置end=""，避免输出多余的换行符 
 #写入完成-进入下一步排序######################
@@ -294,3 +294,234 @@ with open('T1.txt', 'r', encoding="utf-8") as input_file, open('TT1.txt', 'a', e
 
    #结束########################################################
 
+
+
+#开始#########################
+#从整理好的文本中按类别进行特定关键词提取#############################################################################################
+
+keywords = ['电Y']  # 需要提取的关键字列表
+
+pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
+
+#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+
+with open('排序.txt', 'r', encoding='utf-8') as file, open('T2.txt', 'w', encoding='utf-8') as T2:    #####定义临时文件名
+
+    for line in file:
+
+        if re.search(pattern, line):  # 如果行中有任意关键字
+
+         T2.write(line)  # 将该行写入输出文件 #####定义临时文件
+
+for line in fileinput.input("T2.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
+
+    print(line, end="")  #设置end=""，避免输出多余的换行符          
+
+#新建待合并临时TTxxx.TXT文件并在抬头写入频道编码genre###################
+with open('TT2.txt', 'w', encoding='utf-8') as TT2:    #####定义临时文件名
+
+    TT2.write('\n📺电影轮播标清频道,#genre#\n')        
+ 
+    print(line, end="")  #设置end=""，避免输出多余的换行符 
+#写入完成-进入下一步排序######################
+
+#对相同频道IP排序--域名在前###################
+import re
+
+# A版本--自定义排序键函数 固定域名--在前
+def custom_sort_key(item):
+    channel, url = item.split(',')
+
+    channel_letters = ''.join(filter(str.isalpha, channel))
+    channel_numbers = ''.join(filter(str.isdigit, channel))
+
+    if channel_numbers.isdigit():
+        channel_sort_key = (channel_letters, int(channel_numbers))
+    else:
+        channel_sort_key = (channel_letters, 0)
+
+    sort_key = re.search(r"http://(.*?)\.", url)
+    if sort_key:
+        sort_key = sort_key.group(1)
+    else:
+        sort_key = url
+
+    # 检查sort_key是否为数字
+    if sort_key[0].isalpha():
+        sort_key = (0, sort_key)  # 字母开头的sort_key排在最前面
+    elif sort_key.isdigit():
+        sort_key = (1, -int(sort_key))  # 数字从大到小排序
+    else:
+        sort_key = (2, sort_key)
+
+    return (channel_sort_key, sort_key)
+
+with open('T2.txt', 'r', encoding="utf-8") as input_file, open('TT2.txt', 'a', encoding="utf-8") as output_file:
+    # 读取所有行并存储在列表中
+    lines = input_file.readlines()
+
+    # 过滤掉空白行
+    lines = [line.strip() for line in lines if line.strip()]
+    
+    sorted_data = sorted(lines, key=custom_sort_key)
+
+    # 将排序后的数据写入输出文件
+    for channels in sorted_data: 
+        output_file.write(f"{channels}\n")
+    sorted_data = sorted(lines, key=custom_sort_key)
+
+   #结束########################################################
+
+
+#开始#########################
+#从整理好的文本中按类别进行特定关键词提取#############################################################################################
+
+keywords = ['剧J']  # 需要提取的关键字列表
+
+pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
+
+#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+
+with open('排序.txt', 'r', encoding='utf-8') as file, open('T3.txt', 'w', encoding='utf-8') as T3:    #####定义临时文件名
+
+    for line in file:
+
+        if re.search(pattern, line):  # 如果行中有任意关键字
+
+         T3.write(line)  # 将该行写入输出文件 #####定义临时文件
+
+for line in fileinput.input("T3.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
+
+    print(line, end="")  #设置end=""，避免输出多余的换行符          
+
+#新建待合并临时TTxxx.TXT文件并在抬头写入频道编码genre###################
+with open('TT3.txt', 'w', encoding='utf-8') as TT3:    #####定义临时文件名
+
+    TT3.write('\n📺剧集轮播标清频道,#genre#\n')        
+ 
+    print(line, end="")  #设置end=""，避免输出多余的换行符 
+#写入完成-进入下一步排序######################
+
+#对相同频道IP排序--域名在前###################
+import re
+
+# A版本--自定义排序键函数 固定域名--在前
+def custom_sort_key(item):
+    channel, url = item.split(',')
+
+    channel_letters = ''.join(filter(str.isalpha, channel))
+    channel_numbers = ''.join(filter(str.isdigit, channel))
+
+    if channel_numbers.isdigit():
+        channel_sort_key = (channel_letters, int(channel_numbers))
+    else:
+        channel_sort_key = (channel_letters, 0)
+
+    sort_key = re.search(r"http://(.*?)\.", url)
+    if sort_key:
+        sort_key = sort_key.group(1)
+    else:
+        sort_key = url
+
+    # 检查sort_key是否为数字
+    if sort_key[0].isalpha():
+        sort_key = (0, sort_key)  # 字母开头的sort_key排在最前面
+    elif sort_key.isdigit():
+        sort_key = (1, -int(sort_key))  # 数字从大到小排序
+    else:
+        sort_key = (2, sort_key)
+
+    return (channel_sort_key, sort_key)
+
+with open('T3.txt', 'r', encoding="utf-8") as input_file, open('TT3.txt', 'a', encoding="utf-8") as output_file:
+    # 读取所有行并存储在列表中
+    lines = input_file.readlines()
+
+    # 过滤掉空白行
+    lines = [line.strip() for line in lines if line.strip()]
+    
+    sorted_data = sorted(lines, key=custom_sort_key)
+
+    # 将排序后的数据写入输出文件
+    for channels in sorted_data: 
+        output_file.write(f"{channels}\n")
+    sorted_data = sorted(lines, key=custom_sort_key)
+
+   #结束########################################################
+   
+   
+#开始#########################
+#从整理好的文本中按类别进行特定关键词提取#############################################################################################
+
+keywords = ['老DY']  # 需要提取的关键字列表
+
+pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
+
+#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+
+with open('排序.txt', 'r', encoding='utf-8') as file, open('T4.txt', 'w', encoding='utf-8') as T4:    #####定义临时文件名
+
+    for line in file:
+
+        if re.search(pattern, line):  # 如果行中有任意关键字
+
+         T4.write(line)  # 将该行写入输出文件 #####定义临时文件
+
+for line in fileinput.input("T4.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
+
+    print(line, end="")  #设置end=""，避免输出多余的换行符          
+
+#新建待合并临时TTxxx.TXT文件并在抬头写入频道编码genre###################
+with open('TT4.txt', 'w', encoding='utf-8') as TT4:    #####定义临时文件名
+
+    TT4.write('\n📺老电影黑白频道,#genre#\n')        
+ 
+    print(line, end="")  #设置end=""，避免输出多余的换行符 
+#写入完成-进入下一步排序######################
+
+#对相同频道IP排序--域名在前###################
+import re
+
+# A版本--自定义排序键函数 固定域名--在前
+def custom_sort_key(item):
+    channel, url = item.split(',')
+
+    channel_letters = ''.join(filter(str.isalpha, channel))
+    channel_numbers = ''.join(filter(str.isdigit, channel))
+
+    if channel_numbers.isdigit():
+        channel_sort_key = (channel_letters, int(channel_numbers))
+    else:
+        channel_sort_key = (channel_letters, 0)
+
+    sort_key = re.search(r"http://(.*?)\.", url)
+    if sort_key:
+        sort_key = sort_key.group(1)
+    else:
+        sort_key = url
+
+    # 检查sort_key是否为数字
+    if sort_key[0].isalpha():
+        sort_key = (0, sort_key)  # 字母开头的sort_key排在最前面
+    elif sort_key.isdigit():
+        sort_key = (1, -int(sort_key))  # 数字从大到小排序
+    else:
+        sort_key = (2, sort_key)
+
+    return (channel_sort_key, sort_key)
+
+with open('T4.txt', 'r', encoding="utf-8") as input_file, open('TT4.txt', 'a', encoding="utf-8") as output_file:
+    # 读取所有行并存储在列表中
+    lines = input_file.readlines()
+
+    # 过滤掉空白行
+    lines = [line.strip() for line in lines if line.strip()]
+    
+    sorted_data = sorted(lines, key=custom_sort_key)
+
+    # 将排序后的数据写入输出文件
+    for channels in sorted_data: 
+        output_file.write(f"{channels}\n")
+    sorted_data = sorted(lines, key=custom_sort_key)
+
+   #结束########################################################
