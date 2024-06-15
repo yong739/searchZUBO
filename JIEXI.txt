@@ -762,43 +762,6 @@ Y金色学堂,http://85657322.xyz:2000/rtp/239.16.20.115:11150$HENAN电信2+
 河ND宝丰-1,http://85657322.xyz:2000/rtp/239.16.20.209:12090$HENAN电信2+
 河ND宝丰TV,http://85657322.xyz:2000/rtp/239.16.20.63:10630$HENAN电信2+
 
-
-
-CHC家庭影院,http://huihaojie.cn:8888/rtp/235.254.199.246:7980$CQ电信2+
-CHC动作电影,http://huihaojie.cn:8888/rtp/235.254.199.247:7980$CQ电信2+
-CHC高清电影,http://huihaojie.cn:8888/rtp/235.254.199.248:7980$CQ电信2+
-重QA导视,http://huihaojie.cn:8888/rtp/235.254.196.101:1162$CQ电信2+
-重QB睛彩,http://huihaojie.cn:8888/rtp/235.254.196.218:1146$CQ电信2+
-重QC新闻频道,http://huihaojie.cn:8888/rtp/235.254.196.199:7980$CQ电信2+
-重QD影视频道,http://huihaojie.cn:8888/rtp/235.254.198.180:7980$CQ电信2+
-重QE都市频道,http://huihaojie.cn:8888/rtp/235.254.198.181:7980$CQ电信2+
-重QF时尚生活,http://huihaojie.cn:8888/rtp/235.254.198.182:7980$CQ电信2+
-重QG娱乐频道,http://huihaojie.cn:8888/rtp/235.254.198.187:7980$CQ电信2+
-重QH新农村,http://huihaojie.cn:8888/rtp/235.254.198.186:7980$CQ电信2+
-重QI社会与法,http://huihaojie.cn:8888/rtp/235.254.196.210:1112$CQ电信2+
-重QJ少*儿频道,http://huihaojie.cn:8888/rtp/235.254.196.214:1128$CQ电信2+
-重QK科教频道,http://huihaojie.cn:8888/rtp/235.254.196.215:1132$CQ电信2+
-重QL汽摩频道,http://huihaojie.cn:8888/rtp/235.254.196.221:1156$CQ电信2+
-重QP谍战剧场,http://huihaojie.cn:8888/rtp/235.254.198.117:1744$CQ电信2+
-重QP相声小品,http://huihaojie.cn:8888/rtp/235.254.198.118:1748$CQ电信2+
-重QP野外,http://huihaojie.cn:8888/rtp/235.254.198.119:1752$CQ电信2+
-重QP法治,http://huihaojie.cn:8888/rtp/235.254.198.120:1756$CQ电信2+
-重QP热播剧场,http://huihaojie.cn:8888/rtp/235.254.198.113:1728$CQ电信2+
-重QP经典电影,http://huihaojie.cn:8888/rtp/235.254.198.114:1732$CQ电信2+
-重QP光影频道,http://huihaojie.cn:8888/rtp/235.254.198.91:1640$CQ电信2+
-重QP高网电影,http://huihaojie.cn:8888/rtp/235.254.198.95:1656$CQ电信2+
-重QP城市剧场,http://huihaojie.cn:8888/rtp/235.254.198.74:157$CQ电信2+2
-重QP军旅剧场,http://huihaojie.cn:8888/rtp/235.254.198.75:1576$CQ电信2+
-重QP古装剧场,http://huihaojie.cn:8888/rtp/235.254.198.76:1580$CQ电信2+
-重QP音乐现场,http://huihaojie.cn:8888/rtp/235.254.198.77:1584$CQ电信2+
-重QP地理,http://huihaojie.cn:8888/rtp/235.254.198.78:1588$CQ电信2+
-重QP美妆,http://huihaojie.cn:8888/rtp/235.254.198.79:1592$CQ电信2+
-重QP美人,http://huihaojie.cn:8888/rtp/235.254.198.80:1596$CQ电信2+
-重QP精选,http://huihaojie.cn:8888/rtp/235.254.198.81:1600$CQ电信2+
-重QP解密,http://huihaojie.cn:8888/rtp/235.254.198.82:1604$CQ电信2+
-重QP军事,http://huihaojie.cn:8888/rtp/235.254.198.83:1608$CQ电信2+
-重QP国学,http://huihaojie.cn:8888/rtp/235.254.198.84:1612$CQ电信2+
-
 CHC家庭影院,http://huihaojie.cn:8888/rtp/235.254.199.246:7980$CQ电信2+
 CHC动作电影,http://huihaojie.cn:8888/rtp/235.254.199.247:7980$CQ电信2+
 CHC高清电影,http://huihaojie.cn:8888/rtp/235.254.199.248:7980$CQ电信2+
@@ -869,7 +832,6 @@ CHC高清电影,http://home.scanflove.com:7788/rtp/235.254.199.248:7980$CQ电信
 重QP军事,http://home.scanflove.com:7788/rtp/235.254.198.83:1608$CQ电信3+
 重QP国学,http://home.scanflove.com:7788/rtp/235.254.198.84:1612$CQ电信3+
 
-
 重QC新闻频道,http://n1.dddmmh.space:8088/rtp/225.0.4.188:7980$CQ联通1+
 重QD影视频道,http://n1.dddmmh.space:8088/rtp/225.0.4.192:7980$CQ联通1+
 重QI社会与法,http://n1.dddmmh.space:8088/rtp/225.0.4.190:7980$CQ联通1+
@@ -879,8 +841,6 @@ CHC高清电影,http://home.scanflove.com:7788/rtp/235.254.199.248:7980$CQ电信
 重QJ少儿频道,http://n1.dddmmh.space:8088/rtp/225.0.4.191:7980$CQ联通1+
 重QK科教频道,http://n1.dddmmh.space:8088/rtp/225.0.4.193:7980$CQ联通1+
 重QL汽摩频道,http://n1.dddmmh.space:8088/rtp/225.0.4.195:7980$CQ联通1+
-
-
 
 延边卫视,http://live.ybtvyun.com/video/s10016-6f0dfd97912f/index.m3u8?zjild
 延边卫视,http://live.ybtvyun.com/video/s10006-44f040627ca1/index.m3u8?zjild
@@ -903,7 +863,6 @@ CHC高清电影,http://home.scanflove.com:7788/rtp/235.254.199.248:7980$CQ电信
 吉LC双辽综合,http://stream5.jlntv.cn/sl/sd/live.m3u8?zjild
 吉LC辉南新闻,http://stream5.jlntv.cn/hn/sd/live.m3u8?zjild
 吉LC柳河综合,http://stream5.jlntv.cn/lh/sd/live.m3u8?zjild
-
 
 贵Z七星关,https://p8.vzan.com/slowlive/147077707554082780/live.m3u8
 贵Z遵义都市,http://pluslive.zunyifb.com/dspd/playlist.m3u8?_upt=d7e99d101716517357
