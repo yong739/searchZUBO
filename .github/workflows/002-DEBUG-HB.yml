@@ -29,7 +29,7 @@ jobs:
      
 
       - name: Run iptv
-        run: python ${{ github.workspace }}/ZUZU-PY/#github-DEBUG.py     #这里更改要运行的py
+        run: python ${{ github.workspace }}/ZUZU-PY/#github-DEBUG.py
       
         
 
