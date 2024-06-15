@@ -228,7 +228,6 @@ pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个
 
 with open('排序.txt', 'r', encoding='utf-8') as file, open('T1.txt', 'w', encoding='utf-8') as T1:    #####定义临时文件名
 
-    T1.write('\n📺中央卫视数字频道,#genre#\n')                                                                  #####写入临时文件名
 
     for line in file:
 
