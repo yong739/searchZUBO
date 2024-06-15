@@ -218,6 +218,7 @@ for line in fileinput.input("排序.txt", inplace=True):  #打开文件，并对
     print(line, end="")  #设置end=""，避免输出多余的换行符
 
 
+#开始单个提取#########################
 #从整理好的文本中按类别进行特定关键词提取#############################################################################################
 
 keywords = ['CCTV','CETV', 'CF', 'IPTV淘', 'CHC', '凤凰卫视', '卫视', '金鹰卡通', '卡酷少儿', '嘉佳卡通', '哈哈炫动', '乐游频道', '动漫秀场','纪实人文', '金色学堂',  '纪实科教', '金鹰纪实', '求索记录']  # 需要提取的关键字列表
@@ -287,8 +288,9 @@ with open('T1.txt', 'r', encoding="utf-8") as input_file, open('TT1.txt', 'a', e
     sorted_data = sorted(lines, key=custom_sort_key)
 
     # 将排序后的数据写入输出文件
-    for channels in sorted_data:
+    for channels in sorted_data: 
         output_file.write(f"{channels}\n")
     sorted_data = sorted(lines, key=custom_sort_key)
 
+   #结束########################################################
 
