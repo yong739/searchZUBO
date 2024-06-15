@@ -244,40 +244,32 @@ for line in fileinput.input("T1.txt", inplace=True):  #打开文件，并对其�
 #对相同频道IP排序--域名在前###################
 import re
 
-# 自定义排序键函数 固定域名排前面 IP排后面
+# A版本--自定义排序键函数 固定域名--在前
 def custom_sort_key(item):
     channel, url = item.split(',')
-    
+
     channel_letters = ''.join(filter(str.isalpha, channel))
     channel_numbers = ''.join(filter(str.isdigit, channel))
-    
+
     if channel_numbers.isdigit():
-        channel_sort_key = (channel_letters, int(channel_numbers))  
+        channel_sort_key = (channel_letters, int(channel_numbers))
     else:
-        channel_sort_key = (channel_letters, 0)  
-    
+        channel_sort_key = (channel_letters, 0)
+
     sort_key = re.search(r"http://(.*?)\.", url)
     if sort_key:
         sort_key = sort_key.group(1)
     else:
         sort_key = url
-    
-    # 检查sort_key是否以字母开头
+
+    # 检查sort_key是否为数字
     if sort_key[0].isalpha():
-        # 字母开头排在前面
-        sort_key = (0, sort_key)
+        sort_key = (0, sort_key)  # 字母开头的sort_key排在最前面
+    elif sort_key.isdigit():
+        sort_key = (1, -int(sort_key))  # 数字从大到小排序
     else:
-        # 非字母开头排在后面
-        sort_key = (1, sort_key)
-    
-    # 检查sort_key是否为纯数字
-    if sort_key.isdigit():
-        # 数字部分从大到小排序
-        sort_key = (-int(sort_key), 0)
-    else:
-        # 非数字部分从小到大排序
-        sort_key = (0, sort_key)
-    
+        sort_key = (2, sort_key)
+
     return (channel_sort_key, sort_key)
 
 with open('T1.txt', 'r', encoding="utf-8") as input_file, open('T01.txt', 'w', encoding="utf-8") as output_file:
@@ -287,6 +279,11 @@ with open('T1.txt', 'r', encoding="utf-8") as input_file, open('T01.txt', 'w', e
     # 过滤掉空白行
     lines = [line.strip() for line in lines if line.strip()]
     
+    sorted_data = sorted(lines, key=custom_sort_key)
+
+    # 将排序后的数据写入输出文件
+    for channels in sorted_data:
+        output_file.write(f"{channels}\n")
     sorted_data = sorted(lines, key=custom_sort_key)
 
     # 将排序后的数据写入输出文件
