@@ -294,6 +294,9 @@ Y卡酷少儿,http://badloop.x3322.net:8012/rtp/239.3.1.189:8000$BJ联通5+
 Y卡酷少儿,http://joyznm.x3322.net:20000/rtp/239.3.1.189:8000$BJ联通3+
 Y卡酷少儿,http://tnvcn.com:8012/rtp/239.3.1.189:8000$BJ联通1+
 Y卡酷少儿,http://wuzuo.fun:4022/rtp/239.3.1.189:8000$BJ联通2+
+Y金色学堂,http://85657322.xyz:2000/rtp/239.16.20.115:11150$HENAN电信2+
+Y金色学堂,http://myxq.leeleelee.press:4022/rtp/239.254.201.182:7227$HB电信2+
+Y金色学堂,http://www.wzxiejian.top:9999/rtp/233.50.201.186:5140$ZJ电信2+
 三沙卫视,http://182.32.160.19:9997/rtp/239.21.2.9:5002
 东南卫视,http://122.230.39.185:2030/rtp/233.50.201.146:5140
 东南卫视,http://122.230.39.185:2078/rtp/233.50.201.146:5140
@@ -541,8 +544,6 @@ Y卡酷少儿,http://wuzuo.fun:4022/rtp/239.3.1.189:8000$BJ联通2+
 吉L延边-1,http://live.ybtvyun.com/video/s10016-af95004b6d1a/index.m3u8?zjild
 吉L延边-2,http://live.cloud.yanews.cn/video/s10001-YATV-2/index.m3u8?zjild
 吉L延边-2,http://live.ybtvyun.com/video/s10006-04819ee234a7/index.m3u8?zjild
-吉L延边卫视,http://live.ybtvyun.com/video/s10006-44f040627ca1/index.m3u8?zjild
-吉L延边卫视,http://live.ybtvyun.com/video/s10016-6f0dfd97912f/index.m3u8?zjild
 吉L延边朝鲜语,http://live.ybtvyun.com/video/s10006-b571c289a478/index.m3u8?zjild
 吉L延边朝鲜语,http://live.ybtvyun.com/video/s10016-19a16c47eb99/index.m3u8?zjild
 吉L延边汉语,http://live.ybtvyun.com/video/s10016-7e5f23de35df/index.m3u8?zjild
@@ -1818,6 +1819,8 @@ Y卡酷少儿,http://wuzuo.fun:4022/rtp/239.3.1.189:8000$BJ联通2+
 广西卫视,http://122.230.39.185:44158/rtp/233.50.201.49:5140
 广西卫视,http://122.230.39.185:50777/rtp/233.50.201.49:5140
 广西卫视,http://122.230.39.185:6060/rtp/233.50.201.49:5140
+延边卫视,http://live.ybtvyun.com/video/s10006-44f040627ca1/index.m3u8?zjild
+延边卫视,http://live.ybtvyun.com/video/s10016-6f0dfd97912f/index.m3u8?zjild
 新J伊犁哈萨克,http://110.153.180.106:55555/out_3/index.m3u8
 新J伊犁哈萨克,http://110.153.180.106:55555/out_3/index.m3u8?zxinjd
 新J伊犁哈萨克,http://110.153.180.106:55555/out_3/index.m3u8?zxinjd
@@ -3354,9 +3357,6 @@ Y卡酷少儿,http://wuzuo.fun:4022/rtp/239.3.1.189:8000$BJ联通2+
 金色学堂,http://183.185.166.150:8085/rtp/226.0.2.182:9368
 金色学堂,http://183.185.172.208:8085/rtp/226.0.2.182:9368
 金色学堂,http://60.220.167.238:8085/rtp/226.0.2.182:9368
-金色学堂,http://85657322.xyz:2000/rtp/239.16.20.115:11150$HENAN电信2+
-金色学堂,http://myxq.leeleelee.press:4022/rtp/239.254.201.182:7227$HB电信2+
-金色学堂,http://www.wzxiejian.top:9999/rtp/233.50.201.186:5140$ZJ电信2+
 金鹰卡通,http://182.32.160.19:9997/rtp/239.21.1.48:5002
 金鹰纪实,http://182.32.160.19:9997/rtp/239.21.1.170:5002
 陕X01新闻资讯,http://36.46.98.59:8009/rtp/239.111.205.28:5140
