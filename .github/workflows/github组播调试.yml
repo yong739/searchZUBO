@@ -1,4 +1,4 @@
-name: github组播调试
+name: github-DEBUG.py
 
 on:
   schedule:
