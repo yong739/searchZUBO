@@ -277,7 +277,7 @@ def custom_sort_key(item):
 
     return (channel_sort_key, sort_key)
 
-with open('T1.txt', 'r', encoding="utf-8") as input_file, open('TT1.txt', 'w', encoding="utf-8") as output_file:
+with open('T1.txt', 'r', encoding="utf-8") as input_file, open('TT1.txt', 'a', encoding="utf-8") as output_file:
     # 读取所有行并存储在列表中
     lines = input_file.readlines()
 
