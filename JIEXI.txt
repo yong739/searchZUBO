@@ -61,6 +61,7 @@ WS山西卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.51:5140$ZJ电信2+
 WS陕西卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.59:5140$ZJ电信2+
 西藏卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.70:5140$ZJ电信2+
 WY云南卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.46:5140$ZJ电信2+
+WY上虞卫视,https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8
 
 Y卡酷少儿,http://tnvcn.com:8012/rtp/239.3.1.189:8000$BJ联通1+
 IPT淘剧场,http://tnvcn.com:8012/rtp/239.3.1.95:8001$BJ联通1+
@@ -115,6 +116,26 @@ IPT淘电影,http://wuzuo.fun:4022/rtp/239.3.1.250:8001$BJ联通2+
 北JB家庭影院,http://wuzuo.fun:4022/rtp/239.3.1.93:4120$BJ联通2+
 北JB经典电影,http://wuzuo.fun:4022/rtp/239.3.1.195:9024$BJ联通2+
 北JB地理普清,http://wuzuo.fun:4022/rtp/239.3.1.71:4120$BJ联通2+
+
+天JA新闻HD,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.130:5002$TJ联通5+
+天JB文艺HD,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.131:5002$TJ联通5+
+天JC影视HD,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.149:5002$TJ联通5+
+天JD都市HD,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.128:5002$TJ联通5+
+天JE体育HD,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.122:5002$TJ联通5+
+天JF科教HD,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.129:5002$TJ联通5+
+天JG少儿HD,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.125:5002$TJ联通5+
+天JH蓟州区,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.82:5002$TJ联通5+
+天JI游戏风云,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.135:5002$TJ联通5+
+天JJ欢笑剧场,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.139:5002$TJ联通5+
+天JJ精彩影视,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.141:5002$TJ联通5+
+天JJ生活时尚,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.143:5002$TJ联通5+
+天JJ都市剧场,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.146:5002$TJ联通5+
+天JK宝坻区,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.83:5002$TJ联通5+
+天JK静海区,http://wow.lkzflzylzx.top:4022/rtp/225.1.1.110:5002$TJ联通5+
+天JK河东区,http://wow.lkzflzylzx.top:4022/rtp/225.1.2.2:5002$TJ联通5+
+天JK河西区,http://wow.lkzflzylzx.top:4022/rtp/225.1.2.4:5002$TJ联通5+
+天JK滨海新1,http://wow.lkzflzylzx.top:4022/rtp/225.1.2.8:5002$TJ联通5+
+天JK滨海新2,http://wow.lkzflzylzx.top:4022/rtp/225.1.2.8:5002$TJ联通5+
 
 山X定襄综合,http://lbyzztfe.live.sxmty.com/live/hls/645ff4c60e0a49f0a203abbd73dd8be9/0720e665f10f48e98c9639f4f492fb4a-1.m3u8?zshanxd$天威+
 山X汾西综合,https://qmmqvzoz.live.sxmty.com/live/hls/f24f8a390c084386a564074c9260100c/be3fdf07606145739ab2c4b80fe0136a.m3u8?zshanxd$天威+
