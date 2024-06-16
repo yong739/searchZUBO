@@ -53,10 +53,7 @@ Y金色学堂,http://www.wzxiejian.top:9999/rtp/233.50.201.186:5140$ZJ电信2+
 兵团卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.72:5140$ZJ电信2+
 WG甘肃卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.149:5140$ZJ电信2+
 WG广西卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.49:5140$ZJ电信2+
-海南卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.55:5140$ZJ电信2+
 内蒙古卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.148:5140$ZJ电信2+
-宁夏卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.57:5140$ZJ电信2+
-青海卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.65:5140$ZJ电信2+
 WS山西卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.51:5140$ZJ电信2+
 WS陕西卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.59:5140$ZJ电信2+
 西藏卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.70:5140$ZJ电信2+
