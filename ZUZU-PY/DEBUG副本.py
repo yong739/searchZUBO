@@ -292,13 +292,3 @@ with open('T1.txt', 'r', encoding="utf-8") as input_file, open('TT1.txt', 'a', e
     for channels in sorted_data: 
         output_file.write(f"{channels}\n")
     sorted_data = sorted(lines, key=custom_sort_key)
-
-   #结束########################################################
-   
-  
-  os.remove("合并.txt")
-
-  os.remove("排序.txt")
-
-
-print("任务运行完毕")
