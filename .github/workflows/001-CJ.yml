@@ -13,10 +13,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v1.X
+        uses: actions/checkout@v1.0
     
       - name: Set up Python
-        uses: actions/setup-python@v1.X
+        uses: actions/setup-python@v1.0
         with:
           python-version: 3.x
 
