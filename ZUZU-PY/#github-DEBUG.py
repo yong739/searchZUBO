@@ -1,4 +1,4 @@
-﻿
+
 import time
 
 import concurrent.futures
@@ -230,13 +230,13 @@ if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只�
 
 #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-    with open('排序.txt', 'r', encoding='utf-8') as file, open('T1.txt', 'w', encoding='utf-8') as T1:    #####定义临时文件名
+     with open('排序.txt', 'r', encoding='utf-8') as file, open('T1.txt', 'w', encoding='utf-8') as T1:    #####定义临时文件名
 
-    for line in file:
+       for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-         T1.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T1.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T1.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
