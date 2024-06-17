@@ -226,9 +226,11 @@ keywords = ['CCTV','CETV', 'CF', 'IPT淘', 'CHC', 'IWA', '凤凰卫视', '卫视
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行
+
 #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T1.txt', 'w', encoding='utf-8') as T1:    #####定义临时文件名
+    with open('排序.txt', 'r', encoding='utf-8') as file, open('T1.txt', 'w', encoding='utf-8') as T1:    #####定义临时文件名
 
     for line in file:
 
