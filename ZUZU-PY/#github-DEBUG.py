@@ -231,7 +231,7 @@ pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个
 with open('排序.txt', 'r', encoding='utf-8') as file, open('T1.txt', 'w', encoding='utf-8') as T1:    #####定义临时文件名
 
     for line in file:
-
+        if re.search(pattern,line) and line.count(',') == 1: #排除掉一行中有两个以上逗号的行
         if re.search(pattern, line):  # 如果行中有任意关键字
 
          T1.write(line)  # 将该行写入输出文件 #####定义临时文件
