@@ -31,9 +31,7 @@ jobs:
       - name: Run iptv
         run: python ${{ github.workspace }}/ZUZU-PY/#github-DEBUG.py
       
-        
-
-      - name: 提交更改
+      - name: 提交
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Action"
