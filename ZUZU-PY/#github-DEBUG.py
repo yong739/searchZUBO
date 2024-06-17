@@ -547,15 +547,17 @@ keywords = ['重Q']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T5.txt', 'w', encoding='utf-8') as T5:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T5.txt', 'w', encoding='utf-8') as T5:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T5.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T5.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T5.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -625,15 +627,17 @@ keywords = ['北J']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T6.txt', 'w', encoding='utf-8') as T6:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T6.txt', 'w', encoding='utf-8') as T6:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T6.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T6.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T6.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -703,15 +707,17 @@ keywords = ['河B']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T7.txt', 'w', encoding='utf-8') as T7:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T7.txt', 'w', encoding='utf-8') as T7:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T7.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T7.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T7.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -779,17 +785,17 @@ with open('T7.txt', 'r', encoding="utf-8") as input_file, open('TT7.txt', 'a', e
 
 keywords = ['河N']  # 需要提取的关键字列表
 
-pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T8.txt', 'w', encoding='utf-8') as T8:    #####定义临时文件名
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T8.txt', 'w', encoding='utf-8') as T8:    #####定义临时文件名
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-    for line in file:
-
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T8.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T8.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T8.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -859,15 +865,17 @@ keywords = ['天J']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T9.txt', 'w', encoding='utf-8') as T9:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T9.txt', 'w', encoding='utf-8') as T9:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T9.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T9.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T9.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -938,15 +946,17 @@ keywords = ['广D']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T10.txt', 'w', encoding='utf-8') as T10:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T10.txt', 'w', encoding='utf-8') as T10:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T10.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T10.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T10.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1016,15 +1026,17 @@ keywords = ['广X']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T11.txt', 'w', encoding='utf-8') as T11:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T11.txt', 'w', encoding='utf-8') as T11:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T11.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T11.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T11.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1094,15 +1106,17 @@ keywords = ['湖B']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T12.txt', 'w', encoding='utf-8') as T12:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T12.txt', 'w', encoding='utf-8') as T12:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T12.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T12.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T12.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1172,15 +1186,17 @@ keywords = ['山D']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T13.txt', 'w', encoding='utf-8') as T13:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T13.txt', 'w', encoding='utf-8') as T13:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T13.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T13.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T13.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1250,15 +1266,17 @@ keywords = ['安H']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T14.txt', 'w', encoding='utf-8') as T14:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T14.txt', 'w', encoding='utf-8') as T14:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T14.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T14.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T14.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1328,15 +1346,17 @@ keywords = ['江S']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T15.txt', 'w', encoding='utf-8') as T15:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T15.txt', 'w', encoding='utf-8') as T15:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T15.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T15.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T15.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1406,15 +1426,17 @@ keywords = ['江X']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T16.txt', 'w', encoding='utf-8') as T16:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T16.txt', 'w', encoding='utf-8') as T16:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T16.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T16.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T16.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1484,15 +1506,17 @@ keywords = ['山X']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T17.txt', 'w', encoding='utf-8') as T17:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T17.txt', 'w', encoding='utf-8') as T17:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T17.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T17.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T17.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1562,15 +1586,17 @@ keywords = ['浙J']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T18.txt', 'w', encoding='utf-8') as T18:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T18.txt', 'w', encoding='utf-8') as T18:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T18.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T18.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T18.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1640,15 +1666,17 @@ keywords = ['湖N']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T19.txt', 'w', encoding='utf-8') as T19:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T19.txt', 'w', encoding='utf-8') as T19:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T19.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T19.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T19.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1718,15 +1746,17 @@ keywords = ['辽L']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T20.txt', 'w', encoding='utf-8') as T20:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T20.txt', 'w', encoding='utf-8') as T20:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T20.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T20.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T20.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1796,15 +1826,17 @@ keywords = ['吉L']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T21.txt', 'w', encoding='utf-8') as T21:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T21.txt', 'w', encoding='utf-8') as T21:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T21.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T21.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T21.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1874,15 +1906,17 @@ keywords = ['贵Z']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T22.txt', 'w', encoding='utf-8') as T22:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T22.txt', 'w', encoding='utf-8') as T22:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T22.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T22.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T22.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -1952,15 +1986,17 @@ keywords = ['陕X']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T23.txt', 'w', encoding='utf-8') as T23:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T23.txt', 'w', encoding='utf-8') as T23:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T23.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T23.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T23.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -2030,15 +2066,17 @@ keywords = ['新J']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
 
-#pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T24.txt', 'w', encoding='utf-8') as T24:    #####定义临时文件名
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T24.txt', 'w', encoding='utf-8') as T24:    #####定义临时文件名
 
-    for line in file:
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
-
-         T24.write(line)  # 将该行写入输出文件 #####定义临时文件
+            T24.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 for line in fileinput.input("T24.txt", inplace=True):  #打开文件，并对其进行关键词原地替换    
 
@@ -2108,6 +2146,18 @@ with open('T24.txt', 'r', encoding="utf-8") as input_file, open('TT24.txt', 'a',
 keywords = ['GAT']  # 需要提取的关键字列表
 
 pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个关键字
+
+if re.search(pattern,line) and line.count(',') == 1: #设置条件为一行只有一个逗号的，排除掉一行中有两个以上逗号的行比如一个台挨着下一个台排在一起的行###
+    
+     #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
+
+      with open('排序.txt', 'r', encoding='utf-8') as file, open('T25.txt', 'w', encoding='utf-8') as T25:    #####定义临时文件名
+
+         for line in file:
+       
+          if re.search(pattern, line):  # 如果行中有任意关键字
+
+            T25.write(line)  # 将该行写入输出文件 #####定义临时文件
 
 #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
