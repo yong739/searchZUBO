@@ -2376,6 +2376,8 @@ os.remove("TT24.txt")
 
 os.remove("TT25.txt")
 
+os.remove("T30.txt")
+
 os.remove("TT30.txt")
 
 print("任务运行完毕")
