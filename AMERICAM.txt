@@ -243,7 +243,6 @@ CCTV4U,http://27.184.18.144:4022/rtp/239.254.201.205:4220$河\北电信
 CCTV4U,http://27.184.66.47:1024/rtp/239.254.201.205:4220$河\北电信
 CCTV4U,http://27.190.74.112:4022/rtp/239.254.201.205:4220$河\北电信
 CETV1,http://ds920.dsmynas.net:5555/udp/226.0.2.181:9360$山/西联通2+
-CETV1,http://istore4.qnas.net:8889/udp/226.0.2.181:9360$山/西联通3+
 CETV1,http://plex.home.yulei.online:9999/udp/226.0.2.181:9360$山/西联通1+
 CETV1,http://222.141.133.10:8888/rtp/225.1.4.173:1712$河/南新联通
 CETV1,http://221.15.251.210:8888/rtp/225.1.4.173:1712$河/南新联通
@@ -269,7 +268,6 @@ CETV4,http://27.184.66.47:1024/rtp/239.254.200.227:6261$河\北电信
 CETV4,http://27.190.74.112:4022/rtp/239.254.200.227:6261$河\北电信
 CETV4,http://14.155.206.86:4022/rtp/239.253.43.114:5146$广/东电信
 CETV5,http://ds920.dsmynas.net:5555/udp/226.0.2.99:8704$山/西联通2+
-CETV5,http://istore4.qnas.net:8889/udp/226.0.2.99:8704$山/西联通3+
 CETV5,http://plex.home.yulei.online:9999/udp/226.0.2.99:8704$山/西联通1+
 CETV5,http://113.67.164.93:8888/rtp/239.77.0.180:5146$广/东电信
 CETV5,http://106.118.75.16:4022/rtp/239.254.201.230:7253$河\北电信
@@ -388,7 +386,6 @@ CF高尔夫网球,http://27.190.74.112:4022/rtp/239.254.201.223:7252$河\北电�
 CHC动作电影,http://ds920.dsmynas.net:5555/udp/226.0.2.94:8012$山/西联通2+
 CHC动作电影,http://home.scanflove.com:7788/rtp/235.254.199.247:7980$重/庆电信3+
 CHC动作电影,http://huihaojie.cn:8888/rtp/235.254.199.247:7980$重/庆电信2+
-CHC动作电影,http://istore4.qnas.net:8889/udp/226.0.2.94:8012$山/西联通3+
 CHC动作电影,http://plex.home.yulei.online:9999/udp/226.0.2.94:8012$山/西联通1+
 CHC动作电影,http://222.141.133.10:8888/rtp/225.1.4.208:1261$河/南新联通
 CHC动作电影,http://221.15.251.210:8888/rtp/225.1.4.208:1261$河/南新联通
@@ -399,7 +396,6 @@ CHC动作电影,http://123.13.244.182:4000/rtp/225.1.4.208:1261$河/南新联通
 CHC家庭影院,http://ds920.dsmynas.net:5555/udp/226.0.2.240:9820$山/西联通2+
 CHC家庭影院,http://home.scanflove.com:7788/rtp/235.254.199.246:7980$重/庆电信3+
 CHC家庭影院,http://huihaojie.cn:8888/rtp/235.254.199.246:7980$重/庆电信2+
-CHC家庭影院,http://istore4.qnas.net:8889/udp/226.0.2.240:9820$山/西联通3+
 CHC家庭影院,http://plex.home.yulei.online:9999/udp/226.0.2.240:9820$山/西联通1+
 CHC家庭影院,http://222.141.133.10:8888/rtp/225.1.4.209:1262$$河/南新联通
 CHC家庭影院,http://221.15.251.210:8888/rtp/225.1.4.209:1262$$河/南新联通
@@ -410,7 +406,6 @@ CHC家庭影院,http://123.13.244.182:4000/rtp/225.1.4.209:1262$$河/南新联�
 CHC高清电影,http://ds920.dsmynas.net:5555/udp/226.0.2.93:8004$山/西联通2+
 CHC高清电影,http://home.scanflove.com:7788/rtp/235.254.199.248:7980$重/庆电信3+
 CHC高清电影,http://huihaojie.cn:8888/rtp/235.254.199.248:7980$重/庆电信2+
-CHC高清电影,http://istore4.qnas.net:8889/udp/226.0.2.93:8004$山/西联通3+
 CHC高清电影,http://plex.home.yulei.online:9999/udp/226.0.2.93:8004$山/西联通1+
 CHC高清电影,http://222.141.133.10:8888/rtp/225.1.4.207:1260$河/南新联通
 CHC高清电影,http://221.15.251.210:8888/rtp/225.1.4.207:1260$河/南新联通
@@ -418,10 +413,6 @@ CHC高清电影,http://219.151.248.178:8888/rtp/235.254.199.248:7980$CQ电信
 CHC高清电影,http://125.82.168.238:8888/rtp/235.254.199.248:7980$CQ电信
 CHC高清电影,http://125.82.171.210:8888/rtp/235.254.199.248:7980$CQ电信
 CHC高清电影,http://123.13.244.182:4000/rtp/225.1.4.207:1260$河/南新联通
-GAT-人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
-GAT-人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
-GAT-星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193
-GAT-香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8$博客
 IPT淘BABY,http://tnvcn.com:8012/rtp/239.3.1.238:8001$北/京联通1+
 IPT淘BABY,http://wuzuo.fun:4022/rtp/239.3.1.238:8001$北/京联通2+
 IPT淘剧场,http://tnvcn.com:8012/rtp/239.3.1.95:8001$北/京联通1+
@@ -434,6 +425,8 @@ IPT淘萌宠,http://tnvcn.com:8012/rtp/239.3.1.102:8001$北/京联通1+
 IPT淘萌宠,http://wuzuo.fun:4022/rtp/239.3.1.102:8001$北/京联通2+
 IV凤凰卫视中文台,http://asl.x3322.net:8888/udp/239.93.0.162:2192$四/川联通1+
 IV凤凰卫视中文台,http://asl.x3322.net:8888/udp/239.93.1.9:2192$四/川联通1+
+IV凤凰卫视资讯台,http://asl.x3322.net:8888/udp/239.93.0.118:2191$四/川联通1+
+IV凤凰卫视资讯台,http://asl.x3322.net:8888/udp/239.93.1.4:2191$四/川联通1+
 WA安徽卫视,http://plex.home.yulei.online:9999/udp/226.0.2.145:9072$山/西联通1+
 WA安徽卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.113:5140$浙/江电信2+
 WA安徽卫视,http://222.141.133.10:8888/rtp/225.1.4.87:1116$河/南新联通
@@ -5549,8 +5542,8 @@ GAT-中国环球,http://live.cgtn.com/500/prog_index.m3u8
 GAT-中视新闻,http://gigs1.micar.me:8900/live.m3u8?c=14
 GAT-中视新闻,http://news.666.hz.cz:2086/live.m3u8?c=9
 GAT-中视新闻,http://william8073.eu.org:9000/live.m3u8?c=7
-GAT-人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
-GAT-人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
+GAT-人间衛视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
+GAT-人间衛视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
 GAT-公视新闻,http://gigs1.micar.me:8900/live.m3u8?c=13
 GAT-半岛新闻台,http://live-hls-web-aje.getaj.net/AJE/01.m3u8
 GAT-台视台湾台,http://extraott.com:80/live/7921751389/6097373662/5502.m3u8
@@ -5565,7 +5558,7 @@ GAT-年代新闻,http://extraott.com:80/live/7921751389/6097373662/5509.m3u8
 GAT-年代电视,http://extraott.com:80/live/7921751389/6097373662/5508.m3u8
 GAT-日本24小时新闻台,https://n24-cdn-live.ntv.co.jp/ch01/index_high.m3u8
 GAT-星光视界,http://ali.hlspull.yximgs.com/live/zxcvbnm9852.flv
-GAT-星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193
+GAT-星空衛视,http://wouu.net:9977/udp/239.93.0.156:2193
 GAT-民视台湾台,http://extraott.com:80/live/7921751389/6097373662/5528.m3u8
 GAT-民视新闻,http://extraott.com:80/live/7921751389/6097373662/5529.m3u8
 GAT-民视高清台,http://extraott.com:80/live/7921751389/6097373662/5530.m3u8
@@ -5579,4 +5572,4 @@ GAT-美亚C+,http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
 GAT-耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8
 GAT-耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8
 GAT-面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
-GAT-香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8$博客
+GAT-香港衛视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8$博客
