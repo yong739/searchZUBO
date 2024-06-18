@@ -41,13 +41,11 @@ CETV5,http://plex.home.yulei.online:9999/udp/226.0.2.99:8704$山/西联通1+
 CETV1,http://ds920.dsmynas.net:5555/udp/226.0.2.181:9360$山/西联通2+
 CETV5,http://ds920.dsmynas.net:5555/udp/226.0.2.99:8704$山/西联通2+
 
-CETV1,http://istore4.qnas.net:8889/udp/226.0.2.181:9360$山/西联通3+
-CETV5,http://istore4.qnas.net:8889/udp/226.0.2.99:8704$山/西联通3+
-
 
 IV凤凰卫视中文台,http://asl.x3322.net:8888/udp/239.93.0.162:2192$四/川联通1+
 IV凤凰卫视中文台,http://asl.x3322.net:8888/udp/239.93.1.9:2192$四/川联通1+
-
+IV凤凰卫视资讯台,http://asl.x3322.net:8888/udp/239.93.0.118:2191$四/川联通1+
+IV凤凰卫视资讯台,http://asl.x3322.net:8888/udp/239.93.1.4:2191$四/川联通1+
 
 CHC家庭影院,http://huihaojie.cn:8888/rtp/235.254.199.246:7980$重/庆电信2+
 CHC动作电影,http://huihaojie.cn:8888/rtp/235.254.199.247:7980$重/庆电信2+
@@ -67,12 +65,6 @@ CHC家庭影院,http://plex.home.yulei.online:9999/udp/226.0.2.240:9820$山/西�
 CHC高清电影,http://ds920.dsmynas.net:5555/udp/226.0.2.93:8004$山/西联通2+
 CHC动作电影,http://ds920.dsmynas.net:5555/udp/226.0.2.94:8012$山/西联通2+
 CHC家庭影院,http://ds920.dsmynas.net:5555/udp/226.0.2.240:9820$山/西联通2+
-
-CHC高清电影,http://istore4.qnas.net:8889/udp/226.0.2.93:8004$山/西联通3+
-CHC动作电影,http://istore4.qnas.net:8889/udp/226.0.2.94:8012$山/西联通3+
-CHC家庭影院,http://istore4.qnas.net:8889/udp/226.0.2.240:9820$山/西联通3+
-
-
 
 WA安徽卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.113:5140$浙/江电信2+
 WB北京卫视,http://www.wzxiejian.top:9999/rtp/233.50.201.107:5140$浙/江电信2+
@@ -1593,8 +1585,8 @@ GAT-民视台湾台,http://extraott.com:80/live/7921751389/6097373662/5528.m3u8
 GAT-民视新闻,http://extraott.com:80/live/7921751389/6097373662/5529.m3u8
 GAT-年代电视,http://extraott.com:80/live/7921751389/6097373662/5508.m3u8
 GAT-年代新闻,http://extraott.com:80/live/7921751389/6097373662/5509.m3u8
-GAT-人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
-GAT-人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
+GAT-人间衛视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8
+GAT-人间衛视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
 GAT-日本24小时新闻台,https://n24-cdn-live.ntv.co.jp/ch01/index_high.m3u8
 GAT-三立都会,http://extraott.com:80/live/7921751389/6097373662/5506.m3u8
 GAT-三立台湾,http://extraott.com:80/live/7921751389/6097373662/5505.m3u8
@@ -1605,9 +1597,9 @@ GAT-台视新闻,http://gigs1.micar.me:8900/live.m3u8?c=10
 GAT-台视综合台,http://extraott.com:80/live/7921751389/6097373662/5500.m3u8
 GAT-纬来体育,http://hls.szsummer.cn/live/446035/playlist.m3u8?k=32f9ec7c13e4b390289143a8e1b2a898&t=1840341130
 GAT-纬来体育,https://cloud.yumixiu768.com/tmp/123.m3u8
-GAT-香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8$博客
+GAT-香港衛视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8$博客
 GAT-星光视界,http://ali.hlspull.yximgs.com/live/zxcvbnm9852.flv
-GAT-星空卫视,http://wouu.net:9977/udp/239.93.0.156:2193
+GAT-星空衛视,http://wouu.net:9977/udp/239.93.0.156:2193
 GAT-耀才财经,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8
 GAT-耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8
 GAT-中国环球,http://live.cgtn.com/500/prog_index.m3u8
