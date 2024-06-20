@@ -666,7 +666,7 @@ def custom_sort_key(item):
     if sort_key[0].isalpha():
         sort_key = (0, sort_key)  # 字母开头的sort_key排在最前面
     elif sort_key.isdigit():
-        sort_key = (1, -int(sort_key))  # 数字从大到小排序
+        sort_key = (1, int(sort_key))  # 数字从小到大排序
     else:
         sort_key = (2, sort_key)
 
