@@ -65,7 +65,7 @@ for keyword in keywords:
     current_time = datetime.now()
     timeout_cnt = 0
     result_urls = set() 
-    while len(result_urls) == 0 and timeout_cnt <= 5:
+    while len(result_urls) == 0 and timeout_cnt <= 3:
         try:
             search_url = 'https://fofa.info/result?qbase64='
             search_txt = f'\"udpxy\" && country=\"CN\" && region=\"{province}\" && org=\"{org}\"'
