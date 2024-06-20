@@ -1,4 +1,3 @@
-
 import time
 
 import concurrent.futures
@@ -23,11 +22,13 @@ import replace
 
 import fileinput
 
+#上面载入需要在github运行的环境组件--下面开始运行程序
+
 # 合并自定义频道文件#################################################################################################
 
-file_contents = []
+file_contents = []   #这里含义是打开当前目录下以下文件清单--必须要保证有文件--否则报错
 
-file_paths = ["天津联通.txt", "山西联通.txt","安徽电信.txt", "河南联通.txt", "河南电信.txt", "四川电信.txt", "重庆联通.txt", "重庆电信.txt","山东电信.txt","广东电信.txt","广西电信.txt","江西电信.txt","河北电信.txt","浙江电信.txt","湖南电信.txt","辽宁联通.txt","陕西电信.txt","JIEXI.txt"]  # 替换为实际的文件路径列表
+file_paths = ["天津联通.txt", "山西联通.txt","安徽电信.txt", "河南联通.txt", "河南电信.txt", "四川电信.txt", "重庆联通.txt", "重庆电信.txt","山东电信.txt","广东电信.txt","广西电信.txt","江西电信.txt","河北电信.txt","浙江电信.txt","湖南电信.txt","辽宁联通.txt","陕西电信.txt","JIEXI.txt"]  #替换为实际的文件路径列表
 
 for file_path in file_paths:
 
@@ -38,7 +39,7 @@ for file_path in file_paths:
         file_contents.append(content)
 
 
-# 写入合并后的文件
+#写入合并后的文件
 
 with open("合并.txt", "w", encoding="utf-8") as output:
 
@@ -168,7 +169,6 @@ for line in fileinput.input("合并.txt", inplace=True):  #打开文件，并对
 
     line = line.replace("CCTV17", "CCTW17")
 
- 
 
     print(line, end="")  #设置end=""，避免输出多余的换行符
 
@@ -214,7 +214,6 @@ for line in fileinput.input("排序.txt", inplace=True):  #打开文件，并对
     line = line.replace("CCTW17", "CCTV17")
 
 
-
     print(line, end="")  #设置end=""，避免输出多余的换行符
 
  ##################################################################################################################################SPLIT#
@@ -228,11 +227,13 @@ pattern = '|'.join(keywords)  # 创建正则表达式模式，匹配任意一个
 
 #pattern = r"^(.*?),(?!#genre#)(.*?)$" #以分类直接复制
 
-with open('排序.txt', 'r', encoding='utf-8') as file, open('T1.txt', 'w', encoding='utf-8') as T1:    #####定义临时文件名
+if re.search(pattern,line) and line.count(',') == 1:
 
-    for line in file:
+    with open('排序.txt', 'r', encoding='utf-8') as file, open('T1.txt', 'w', encoding='utf-8') as T1:    #####定义临时文件名
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+      for line in file:
+
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T1.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -310,7 +311,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T2.txt', 'w', enco
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T2.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -390,7 +391,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T4.txt', 'w', enco
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T4.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -468,7 +469,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T5.txt', 'w', enco
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T5.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -546,7 +547,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T6.txt', 'w', enco
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T6.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -624,7 +625,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T7.txt', 'w', enco
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T7.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -702,7 +703,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T8.txt', 'w', enco
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T8.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -780,7 +781,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T9.txt', 'w', enco
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T9.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -859,7 +860,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T10.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T10.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -937,7 +938,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T11.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T11.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1015,7 +1016,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T12.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T12.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1093,7 +1094,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T13.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T13.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1171,7 +1172,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T14.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T14.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1249,7 +1250,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T15.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T15.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1327,7 +1328,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T16.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T16.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1405,7 +1406,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T17.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T17.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1483,7 +1484,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T18.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T18.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1561,7 +1562,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T19.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T19.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1639,7 +1640,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T20.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T20.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1717,7 +1718,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T21.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T21.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1795,7 +1796,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T22.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T22.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1873,7 +1874,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T23.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T23.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -1951,7 +1952,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T24.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T24.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -2029,7 +2030,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T25.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T25.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -2107,7 +2108,7 @@ with open('排序.txt', 'r', encoding='utf-8') as file, open('T30.txt', 'w', enc
 
     for line in file:
 
-        if re.search(pattern, line):  # 如果行中有任意关键字
+        if re.search(pattern, line) and line.count(',') == 1:  # 如果行中有任意关键字而且行内只有一个逗号
 
          T30.write(line)  # 将该行写入输出文件 #####定义临时文件
 
@@ -2176,7 +2177,7 @@ with open('T30.txt', 'r', encoding="utf-8") as input_file, open('TT30.txt', 'a',
 
 file_contents = []
 
-file_paths = ["TT1.txt", "TT2.txt", "TT3.txt", "TT4.txt", "TT5.txt", "TT6.txt", "TT7.txt", "TT8.txt", "TT9.txt", "TT10.txt", "TT11.txt", "TT12.txt", "TT13.txt", "TT14.txt", "TT15.txt", "TT16.txt", "TT17.txt", "TT18.txt", "TT19.txt", "TT20.txt", "TT21.txt", "TT22.txt", "TT23.txt", "TT24.txt", "TT25.txt",  "TT30.txt"] 
+file_paths = ["TT1.txt", "TT2.txt", "TT4.txt", "TT5.txt", "TT6.txt", "TT7.txt", "TT8.txt", "TT9.txt", "TT10.txt", "TT11.txt", "TT12.txt", "TT13.txt", "TT14.txt", "TT15.txt", "TT16.txt", "TT17.txt", "TT18.txt", "TT19.txt", "TT20.txt", "TT21.txt", "TT22.txt", "TT23.txt", "TT24.txt", "TT25.txt",  "TT30.txt"] 
 
 for file_path in file_paths:
 
@@ -2190,7 +2191,7 @@ for file_path in file_paths:
 
 # 写入合并后的文件
 
-with open("AMERICAM.txt", "w", encoding="utf-8") as output:
+with open("AMER.txt", "w", encoding="utf-8") as output:
 
     output.write('\n'.join(file_contents))
 
@@ -2200,13 +2201,13 @@ with open("AMERICAM.txt", "w", encoding="utf-8") as output:
   
 
 #开始对输出文件Americam.txt修改违规字操作如下
-with open('AMERICAM.txt', 'r', encoding='utf-8') as file:
+with open('AMER.txt', 'r', encoding='utf-8') as file:
     content = file.read()
 
 #键入需要修改关键字
 content = content.replace("CHC", "CHD").replace("里番", "里帆").replace("剧", "矩").replace("数字", "地方频道").replace("央视", "泱视").replace("兵器", "梹器").replace("三立", "三笠").replace("台湾", "苔塆").replace("澳门", "奥扪").replace("东森", "岽森").replace("人间", "朲间").replace("电影", "电映").replace("棋牌", "祺排").replace("风云", "风纭").replace("WA", "").replace("WB", "").replace("WC", "").replace("WD", "").replace("WE", "").replace("WF", "").replace("WG", "").replace("WH", "").replace("WI", "").replace("WJ", "").replace("WK", "").replace("WL", "").replace("WM", "").replace("WN", "").replace("WO", "").replace("WP", "").replace("WP", "").replace("WQ", "").replace("WR", "").replace("WS", "").replace("WT", "").replace("WU", "").replace("WV", "").replace("WW", "").replace("WX", "").replace("WY", "").replace("WZ", "").replace("X纪实", "记视").replace("金鹰", "金莺").replace("乐游", "悦游").replace("Y卡酷", "咔酷").replace("Y动漫", "动曼").replace("Y金色学堂", "琻色学堂").replace("卡通", "咔通").replace("电Y", "电映").replace("老DY", "老电映").replace("德华", "得铧").replace("星驰", "新池").replace("成龙", "晟龙").replace("李连杰", "李联结").replace("林正英", "琳正瑛").replace("梁家辉", "樑家晖").replace("洪金宝", "红金保").replace("王晶", "王橸").replace("古惑", "咕获").replace("战争", "-占征").replace("救援", "久源").replace("贺岁", "-过年").replace("贝爷", "北夜").replace("谍战", "解发").replace("港片", "岗弯片").replace("玄幻", "奇幻").replace("黄渤", "潢勃").replace("润发", "闰䥽").replace("巨石", "钜什").replace("强森", "墙森").replace("沈腾", "沈藤").replace("洪金宝", "红今保").replace("功夫片", "武峡").replace("动画片", "动话片").replace("小鬼头", "-XGT").replace("坦森", "袒森").replace("灾难", "世纪").replace("犯罪", "形事").replace("古墓", "寻幕").replace("港片", "巷片").replace("黑帮", "团派").replace("斗争", "秆杖").replace("斗鱼", "逗余").replace("神乐", "绅视").replace("国产", "国内").replace("悬疑", "轩怡").replace("怪兽", "小动物").replace("恐怖", "抓瑰").replace("死神", "斯圣").replace("女神", "钕神").replace("滴血", "嘀雪").replace("X乐", "乐").replace("X求", "求").replace("X纪", "记").replace("X记", "记").replace("X金", "金").replace("Y动", "动").replace("Y卡", "咔").replace("Y咔", "咔").replace("Y嘉", "佳").replace("Y新", "新").replace("电Y", "电映").replace("剧J", "裾集").replace("重Q", "重庆").replace("北J", "北京").replace("河B", "河北").replace("河N", "河南").replace("天J", "天津").replace("广D", "广东").replace("湖B", "湖北").replace("湖N", "湖南").replace("山D", "山东").replace("安H", "安徽").replace("江S", "江苏").replace("山X", "山西").replace("浙J", "浙江").replace("辽L", "辽宁").replace("吉L", "吉林").replace("贵Z", "贵州").replace("陕X", "陕西").replace("S川", "四川").replace("GAT-", "").replace("香港", "萫港").replace("裾J", "裾集").replace("江X", "江西").replace("新J", "新疆").replace("CF", "").replace("IV", "").replace("广X", "广西").replace("A", "").replace("B", "").replace("F", "").replace("G", "").replace("I", "").replace("J", "").replace("K", "").replace("L", "").replace("M", "").replace("N", "").replace("O", "").replace("P", "").replace("Q", "").replace("R", "").replace("S", "").replace("U", "").replace("W", "").replace("X", "").replace("Y", "").replace("Z", "").replace("C新闻", "新闻").replace("电映C", "电映").replace("电映E", "电映").replace("电映H", "电映").replace("裾集C", "裾集").replace("裾集D", "裾集").replace("裾集E", "裾集").replace("D影视", "影视").replace("E都市", "都市").replace("H新农", "新农").replace("河北C", "河北").replace("河北D", "河北").replace("河南C", "河南").replace("河南D", "河南").replace("天津C", "天津").replace("天津D", "天津").replace("天津E", "天津").replace("广东C", "广东").replace("广东H", "广东").replace("广西C", "广西").replace("广西D", "广西").replace("广西E", "广西").replace("广西H", "广西").replace("湖北C", "湖北").replace("湖北D", "湖北").replace("山东C", "山东").replace("山东D", "山东").replace("山东E", "山东").replace("山东H", "山东").replace("安徽C", "安徽").replace("安徽D", "安徽").replace("安徽E", "安徽").replace("安徽H", "安徽").replace("江西C", "江西").replace("江西D", "江西").replace("江西E", "江西").replace("江西H", "江西").replace("陕西C", "陕西").replace("陕西D", "陕西").replace("陕西E", "陕西").replace("陕西H", "陕西").replace("浙江C", "浙江").replace("浙江D", "浙江").replace("浙江E", "浙江").replace("浙江H", "浙江").replace("四川C", "四川").replace("四川D", "四川").replace("四川E", "四川").replace("四川H", "四川").replace("辽宁C", "辽宁").replace("辽宁D", "辽宁").replace("辽宁E", "辽宁").replace("辽宁H", "辽宁").replace("吉林C", "吉林").replace("山西C", "山西").replace("山西D", "山西").replace("山西E", "山西").replace("山西H", "山西").replace("党员教育", "教育").replace("政法", "政律").replace("融媒", "传楳").replace("党员教育", "教育").replace("高清", "hd").replace("电视指南", "电世指楠").replace("世界地理", "全球地理").replace("文化精品", "文化经典").replace("淘娱乐", "淘喻乐").replace("家庭影院", "家霆映院").replace("女性时尚", "女士时尚").replace("高尔夫网球", "网球频道").replace("凤凰卫视中文台", "凤皇卫视").replace("凤凰卫视资讯台", "凤皇资讯").replace("纪实", "记视")
 
-with open('AMERICAM-out.txt', 'w', encoding='utf-8') as file:
+with open('AMER-out.txt', 'w', encoding='utf-8') as file:
     file.write(content)
 	
 #结束对关键字替换
@@ -2215,21 +2216,22 @@ with open('AMERICAM-out.txt', 'w', encoding='utf-8') as file:
   
   
   #开始删除IP段速度慢的行
-with open("AMERICAM-out.txt",'r', encoding='utf-8') as file: #打开原始文件
+with open("AMER-out.txt",'r', encoding='utf-8') as file: #打开原始文件
 
     lines = file.readlines()    #读取所有行
 
 with open("AMERICAM-over.txt",'w', encoding='utf-8') as file:   #新建输出文件
 
     for line in lines:  #查找每一行
-		
-        if line.find("http://27.10") != -1 or line.find("http://218.89") != -1 or line.find("http://220.175") != -1 or line.find("http://106.86") != -1 or line.find("http://113.71") != -1 or line.find("http://221.197") != -1 or line.find("http://182.32") != -1 or line.find("http://171.214") != -1 or line.find("http://116.252") != -1 or line.find("http://144.255") != -1 or line.find("http:/61.176") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1:    #在or后面添加更多需要删除的http://xxx地址
+		#如果IP当中包含下面数字
+        if line.find("http://27.10") != -1 or line.find("http://218.89") != -1 or line.find("http://220.175") != -1 or line.find("http://106.86") != -1 or line.find("http://113.71") != -1 or line.find("http://221.197") != -1 or line.find("http://182.32") != -1 or line.find("http://171.214") != -1 or line.find("http://116.252") != -1 or line.find("http://144.255") != -1 or line.find("http:/61.176") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1 or line.find("http://27.10") != -1:    #在or后面添加更多需要删除的http://xxx地址-注意冒号结尾-中间没有冒号
 				       
-            pass  #过滤
-        else:     #选择
+            pass  #pass过滤掉上面给出条件的ip
+        else:     #其他一律写入文件
             file.write(line)
-	#结束#删除IP段任务完成
+	#结束---删除IP段任务完成
 
+#删除所有临时文件--删除清单在下面列出
 os.remove("合并.txt")
 
 os.remove("排序.txt")
@@ -2282,6 +2284,8 @@ os.remove("T24.txt")
 
 os.remove("T25.txt")
 
+os.remove("T30.txt")
+
 os.remove("TT1.txt")
 
 os.remove("TT2.txt")
@@ -2330,13 +2334,12 @@ os.remove("TT24.txt")
 
 os.remove("TT25.txt")
 
-os.remove("T30.txt")
 
 os.remove("TT30.txt")
 
-os.remove("AMERICAM.txt")
+os.remove("AMER.txt")
 
-os.remove("AMERICAM-out.txt")
+os.remove("AMER-out.txt")
 
 
 print("任务运行完毕")
