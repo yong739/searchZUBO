@@ -2220,7 +2220,7 @@ with open("AMER-delete.txt",'r', encoding='utf-8') as file: #打开原始文件
 
     lines = file.readlines()    #读取所有行
 
-with open("AMERICAM-over.txt",'w', encoding='utf-8') as file:   #新建输出文件
+with open("thankyou.txt",'w', encoding='utf-8') as file:   #新建输出文件
 
     for line in lines:  #查找每一行
 		#如果IP当中包含下面数字
@@ -2335,5 +2335,9 @@ os.remove("TT24.txt")
 os.remove("TT25.txt")
 
 os.remove("TT30.txt")
+
+os.remove("AMER-delete.txt")
+
+os.remove("AMER-start.txt")
 
 print("任务运行完毕")
