@@ -906,7 +906,6 @@ Y嘉佳卡通,http://alvin.ergotron.net:8000/rtp/239.77.0.179:5146$广/东电信
 广XK贺州新闻,http://dun.hitu.vip:8181/rtp/239.81.0.137:4056$广/西电信1+
 广XZ电竞1,http://dun.hitu.vip:8181/rtp/239.81.0.203:4056$广/西电信1+
 广XZ电竞2,http://dun.hitu.vip:8181/rtp/239.81.0.201:4056$广/西电信1+
-Y动漫秀场,http://dun.hitu.vip:8181/rtp/239.81.0.68:4056$广/西电信1+
 广XE都市剧场,http://dun.hitu.vip:8181/rtp/239.81.0.81:4056$广/西电信1+
 广XE法治天地,http://dun.hitu.vip:8181/rtp/239.81.0.79:4056$广/西电信1+
 广XYIPV7,http://dun.hitu.vip:8181/rtp/239.81.0.253:4056$广/西电信1+
