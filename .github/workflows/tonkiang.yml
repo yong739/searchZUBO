@@ -32,7 +32,7 @@ jobs:
         
       - name: Run py
         run: |
-          python ${{ github.workspace }}/iptv_udp.py
+          python ${{ github.workspace }}/py/tonkiang.py
         #  python ${{ github.workspace }}/txt_m3u.py
          
       - name: 提交更改
