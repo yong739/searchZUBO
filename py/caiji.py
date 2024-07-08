@@ -1,13 +1,15 @@
-
 import os
 import requests
 import re
 import base64
 import cv2
-import datetime
+#import datetime
 from datetime import datetime
 from bs4 import BeautifulSoup
+from translate import Translator
+import pytz
 from urllib.parse import urlparse
+import time
 
 # 获取rtp目录下的文件名
 files = os.listdir('rtp')
@@ -136,23 +138,37 @@ for keyword in keywords:
                 continue
             else:
                 print(f"{current_time} 搜索IPTV频道源[]，超时次数过多：{timeout_cnt} 次，停止处理")
-print('节目表制作完成！ 文件输出在当前文件夹！')
+#print('节目表制作完成！ 文件输出在当前文件夹！')
 
-# 将当前目录下的所有txt文件合并到一个文件
+    # 获取outfiles目录下的文件名
+    # files1 = os.listdir('outfiles')
+    files1 = 'outfiles'
+    # 过滤TXT文件
+    file_contents = []
+    for file_path in filter_files(files1, '.txt'):
+        with open('outfiles/' + file_path, 'r', encoding="utf-8") as file:
+            content = file.read()
+            file_contents.append(content)
 
-# key 获取当前目录下的文件列表
-file_list = os.listdir(./outfiles)
+        # 移除文件
+        # os.remove('outfiles/' + file_path)
 
-# 创建一个新文件，用于保存合并后的内容
-with open('result.txt', 'w') as f_result:
-    # 遍历文件列表
-    for filename in file_list:
-        # 只处理txt文件
-        if filename.endswith('.txt'):
-            # 打开txt文件，读取内容
-            with open(filename, 'r',encoding='UTF-8') as f_txt:
-                content = f_txt.read()
-                # 将读取的内容写入到result.txt文件中
-                f_result.write(content)
-                # 写入换行符
-                f_result.write('\n')
+    # 写入合并后的txt文件
+    with open("IPTV_UDP.txt", "w", encoding="utf-8") as output:
+        output.write('\n\n'.join(file_contents))
+        # 写入更新日期时间
+        # file.write(f"{now_today}更新,#genre#\n")
+        # 获取当前时间
+        local_tz = pytz.timezone("Asia/Shanghai")
+        now = datetime.now(local_tz)
+        # now = datetime.now()
+        output.write(f"\n更新时间,#genre#\n")
+        output.write(f"{now.strftime("%Y-%m-%d")},url\n")
+        output.write(f"{now.strftime("%H:%M:%S")},url\n")
+
+    output.close()
+
+    print(f"电视频道成功写入IPTV_UDP.txt")
+
+
+main()
