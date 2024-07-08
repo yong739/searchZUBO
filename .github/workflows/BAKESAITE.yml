@@ -34,6 +34,7 @@ jobs:
         run: pip install translate requests 
         
       - name: Run iptv
+        run: python ${{ github.workspace }}/py/fanmingming.py
         run: python ${{ github.workspace }}/py/caiji.py
         run: python ${{ github.workspace }}/py/hebing.py
          
