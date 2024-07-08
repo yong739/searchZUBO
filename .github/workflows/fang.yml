@@ -1,0 +1,42 @@
+name: M3u to txt
+
+on:
+  schedule:
+    - cron: '45 21 * * *'
+  workflow_dispatch:
+    branches:
+      - master
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        pip install m3u8 requests
+
+    - name: Run Python script
+      run: python ${{ github.workspace }}/py/fanmingming.py
+
+    - name: Upload txt file as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: iptv.txt
+        path: ./iptv.txt
+
+    - name: Commit and push changes
+      run: |
+       git config --global user.email "actions@github.com"
+       git config --global user.name "GitHub Actions"
+       git add iptv.txt
+       git commit -m "Update iptv.txt [skip ci]"
+       git push
