@@ -1,3 +1,4 @@
+
 import os
 import requests
 import re
@@ -119,7 +120,7 @@ for keyword in keywords:
                 rtp_filename = f'rtp/{province}_{isp}.txt'
                 with open(rtp_filename, 'r', encoding='utf-8') as file:
                     data = file.read()
-                txt_filename = f'outfiles/{province}_{isp}.txt'
+                txt_filename = f'{province}{isp}.txt'
                 with open(txt_filename, 'w') as new_file:
                     for url in valid_ips:
                         new_data = data.replace("rtp://", f"{url}/rtp/")
@@ -136,24 +137,3 @@ for keyword in keywords:
             else:
                 print(f"{current_time} 搜索IPTV频道源[]，超时次数过多：{timeout_cnt} 次，停止处理")
 print('节目表制作完成！ 文件输出在当前文件夹！')
-
-# 获取outfiles目录下的文件名
-# files1 = os.listdir('outfiles')
-files1 = 'outfiles'
-    # 过滤TXT文件
-file_contents = []
-for file_path in files:
-    with open('outfiles/' + file_path, 'r', encoding="utf-8") as file:
-        content = file.read()
-        file_contents.append(content)
-
-# 写入合并后的txt文件
-with open("IPTV_UDP.txt", "w", encoding="utf-8") as output:
-    output.write('\n\n'.join(file_contents))
-
-output.close()
-
-print(f"电视频道成功写入IPTV_UDP.txt")
-
-
-main()
