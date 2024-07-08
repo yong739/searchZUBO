@@ -120,7 +120,7 @@ for keyword in keywords:
                 rtp_filename = f'rtp/{province}_{isp}.txt'
                 with open(rtp_filename, 'r', encoding='utf-8') as file:
                     data = file.read()
-                txt_filename = f'{province}{isp}.txt'
+                txt_filename = f'outfiles/{province}{isp}.txt'
                 with open(txt_filename, 'w') as new_file:
                     for url in valid_ips:
                         new_data = data.replace("rtp://", f"{url}/rtp/")
@@ -136,4 +136,37 @@ for keyword in keywords:
                 continue
             else:
                 print(f"{current_time} 搜索IPTV频道源[]，超时次数过多：{timeout_cnt} 次，停止处理")
-print('节目表制作完成！ 文件输出在当前文件夹！')
+
+# 获取outfiles目录下的文件名
+    # files1 = os.listdir('outfiles')
+    files1 = 'outfiles'
+    # 过滤TXT文件
+    file_contents = []
+    for file_path in filter_files(files1, '.txt'):
+        with open('outfiles/' + file_path, 'r', encoding="utf-8") as file:
+            content = file.read()
+            file_contents.append(content)
+
+        # 移除文件
+        # os.remove('outfiles/' + file_path)
+
+    # 写入合并后的txt文件
+    with open("IPTV_UDP.txt", "w", encoding="utf-8") as output:
+        output.write('\n\n'.join(file_contents))
+        # 写入更新日期时间
+        # file.write(f"{now_today}更新,#genre#\n")
+        # 获取当前时间
+        local_tz = pytz.timezone("Asia/Shanghai")
+        now = datetime.now(local_tz)
+        # now = datetime.now()
+        output.write(f"\n更新时间,#genre#\n")
+        output.write(f"{now.strftime("%Y-%m-%d")},url\n")
+        output.write(f"{now.strftime("%H:%M:%S")},url\n")
+
+    output.close()
+
+    print(f"电视频道成功写入IPTV_UDP.txt")
+#print('节目表制作完成！ 文件输出在当前文件夹！')
+
+main()
+
