@@ -137,20 +137,5 @@ for keyword in keywords:
                 continue
             else:
                 print(f"{current_time} 搜索IPTV频道源[]，超时次数过多：{timeout_cnt} 次，停止处理")
-#print('节目表制作完成！ 文件输出在当前文件夹！')
+print('节目表制作完成！ 文件输出在当前文件夹！')
 
-#获取目标文件夹的路径
-filedir = 'outfiles'
-#获取当前文件夹中的文件名称列表  
-#filenames=os.listdir(filedir)
-#打开当前目录下的result.txt文件，如果没有则创建
-f=open('result2.txt','w')
-#先遍历文件名
-for filename in filenames:
-    filepath = filedir+'/'+filename
-    #遍历单个文件，读取行数
-    for line in open(filepath):
-        f.writelines(line)
-    f.write('\n')
-#关闭文件
-f.close()
