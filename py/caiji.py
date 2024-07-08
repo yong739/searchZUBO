@@ -146,7 +146,7 @@ for keyword in keywords:
     # 过滤TXT文件
     file_contents = []
     for file in files(files1, '.txt'):
-        with open('outfiles/' + file_path, 'r', encoding="utf-8") as file:
+        with open('outfiles/' + file, 'r', encoding="utf-8") as file:
             content = file.read()
             file_contents.append(content)
 
