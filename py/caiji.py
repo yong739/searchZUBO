@@ -1,4 +1,3 @@
-
 import os
 import requests
 import re
@@ -10,7 +9,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 
 # 获取rtp目录下的文件名
-files = os.listdir('rtp')
+files = os.listdir('ppt')
 
 files_name = []
 
@@ -120,7 +119,7 @@ for keyword in keywords:
                 rtp_filename = f'rtp/{province}_{isp}.txt'
                 with open(rtp_filename, 'r', encoding='utf-8') as file:
                     data = file.read()
-                txt_filename = f'outfiles/{province}{isp}.txt'
+                txt_filename = f'/outfiles/{province}{isp}.txt'
                 with open(txt_filename, 'w') as new_file:
                     for url in valid_ips:
                         new_data = data.replace("rtp://", f"{url}/rtp/")
@@ -136,10 +135,4 @@ for keyword in keywords:
                 continue
             else:
                 print(f"{current_time} 搜索IPTV频道源[]，超时次数过多：{timeout_cnt} 次，停止处理")
-
-
-    
 print('节目表制作完成！ 文件输出在当前文件夹！')
-
-
-
