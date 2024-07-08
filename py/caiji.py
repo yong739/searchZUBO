@@ -141,7 +141,7 @@ print('节目表制作完成！ 文件输出在当前文件夹！')
 # 将当前目录下的所有txt文件合并到一个文件
 
 # key 获取当前目录下的文件列表
-file_list = os.listdir(outfiles)
+file_list = os.listdir(./outfiles)
 
 # 创建一个新文件，用于保存合并后的内容
 with open('result.txt', 'w') as f_result:
