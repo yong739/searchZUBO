@@ -168,5 +168,5 @@ for keyword in keywords:
     print(f"电视频道成功写入IPTV_UDP.txt")
 #print('节目表制作完成！ 文件输出在当前文件夹！')
 
-main()
+
 
