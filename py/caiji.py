@@ -6,8 +6,6 @@ import cv2
 import datetime
 from datetime import datetime
 from bs4 import BeautifulSoup
-from translate import Translator
-import pytz
 from urllib.parse import urlparse
 
 # 获取rtp目录下的文件名
@@ -152,15 +150,6 @@ for file_path in files:
 # 写入合并后的txt文件
 with open("IPTV_UDP.txt", "w", encoding="utf-8") as output:
     output.write('\n\n'.join(file_contents))
-    # 写入更新日期时间
-    # file.write(f"{now_today}更新,#genre#\n")
-    # 获取当前时间
-    local_tz = pytz.timezone("Asia/Shanghai")
-    now = datetime.now(local_tz)
-    # now = datetime.now()
-    output.write(f"\n更新时间,#genre#\n")
-    output.write(f"{now.strftime("%Y-%m-%d")},url\n")
-    output.write(f"{now.strftime("%H:%M:%S")},url\n")
 
 output.close()
 
