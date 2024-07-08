@@ -36,7 +36,7 @@ for line in m3u_content.split('\n'):
 
 
 # 将结果写入 iptv.txt 文件
-with open("./iptv.txt", "w", encoding="utf-8") as output_file:
+with open("./outfiles/fanmingming.txt", "w", encoding="utf-8") as output_file:
     # 遍历字典，写入结果文件
     for group_name, links in output_dict.items():
         output_file.write(f"{group_name},#genre#\n")
