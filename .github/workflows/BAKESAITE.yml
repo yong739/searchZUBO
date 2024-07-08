@@ -35,7 +35,7 @@ jobs:
         
       - name: Run iptv
         run: python ${{ github.workspace }}/py/caiji.py
-        run: python ${{ github.workspace }}/py/hebing.py
+        
          
       - name: Commit results
         run: |
