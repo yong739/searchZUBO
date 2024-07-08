@@ -25,6 +25,8 @@ jobs:
       - name: Install dependencies
         run: pip install selenium requests futures eventlet
       - name: Install dependencies
+        run: pip install pytz
+      - name: Install dependencies
         run: pip install opencv-python requests 
       - name: Install dependencies
         run: pip install Beautifulsoup4 requests 
