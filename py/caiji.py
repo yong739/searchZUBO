@@ -15,7 +15,7 @@ files = os.listdir('rtp')
 files_name = []
 
 # 去除后缀名并保存至provinces_isps
-for file in filter_files(files, ".txt"):
+for file in files:
     name, extension = os.path.splitext(file)
     files_name.append(name)
 
@@ -142,7 +142,7 @@ for keyword in keywords:
     files1 = 'outfiles'
     # 过滤TXT文件
     file_contents = []
-    for file_path in filter_files(files1, '.txt'):
+    for file_path in files:
         with open('outfiles/' + file_path, 'r', encoding="utf-8") as file:
             content = file.read()
             file_contents.append(content)
