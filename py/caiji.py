@@ -135,7 +135,7 @@ for keyword in keywords:
                 continue
             else:
                 print(f"{current_time} 搜索IPTV频道源[]，超时次数过多：{timeout_cnt} 次，停止处理")
-print('节目表制作完成！ 文件输出在当前文件夹！')
+#print('节目表制作完成！ 文件输出在当前文件夹！')
 
     # 获取outfiles目录下的文件名
     # files1 = os.listdir('outfiles')
@@ -166,3 +166,6 @@ print('节目表制作完成！ 文件输出在当前文件夹！')
     output.close()
 
     print(f"电视频道成功写入IPTV_UDP.txt")
+
+
+main()
