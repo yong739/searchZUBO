@@ -31,7 +31,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: iptv.txt
-        path: ./outfiles/fanmingming.txt
+        path: /outfiles/fanmingming.txt
 
     - name: Commit and push changes
       run: |
