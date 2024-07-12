@@ -7,7 +7,6 @@ import datetime
 from datetime import datetime
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
-import os.path #文件夹遍历函数  
 
 # 获取rtp目录下的文件名
 files = os.listdir('rtp')
@@ -122,7 +121,6 @@ for keyword in keywords:
                     data = file.read()
                 txt_filename = f'{province}{isp}.txt'
                 with open(txt_filename, 'w') as new_file:
-                   # new_file.write(f'{province}{isp},#genre#\n')
                     for url in valid_ips:
                         new_data = data.replace("rtp://", f"{url}/rtp/")
                         new_file.write(new_data)
