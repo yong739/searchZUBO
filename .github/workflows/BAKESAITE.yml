@@ -3,7 +3,7 @@ name: work
 
 on:
   schedule:
-  - cron: '02 0,9 * * *'  #5-7-9-11-13-15-17-19-21-23 》02分&&&
+  - cron: '02 3,9 * * *'  #5-7-9-11-13-15-17-19-21-23 》02分&&&
   workflow_dispatch:
     分支:
       - main
@@ -35,7 +35,7 @@ jobs:
         
       - name: Run iptv
         run: |
-          python ${{ github.workspace }}/py/caiji.py
+          python ${{ github.workspace }}/py/#caiji.py
         
          
       - name: Commit results
