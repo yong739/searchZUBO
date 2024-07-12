@@ -16,3 +16,4 @@ for filename in filenames:
     f.write('\n')
 #关闭文件
 f.close()
+#https://github.com/sosazi9847/Kowaryou
