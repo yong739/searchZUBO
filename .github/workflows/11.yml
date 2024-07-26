@@ -26,7 +26,10 @@ jobs:
       - name: Run shaanxi
         run: python ${{ github.workspace }}/33.py
 
-     - name: 提交更改
+   #   - name: Run zhejiang
+   #     run: python ${{ github.workspace }}/zhejiang.py
+         
+      - name: 提交更改
         run: |
           git config --local user.email "dwc1119@163.com"
           git config --local user.name "dwc1119"
