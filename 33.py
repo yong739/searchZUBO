@@ -16,7 +16,7 @@ urls = [
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjM0NjIiICYmIHJlZ2lvbj0iS2FvaHNpdW5nIiA%3D",#西安
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjM0NjIiICYmIHJlZ2lvbj0iVGFpcGVpIg%3D%3D",#宝鸡
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjM0NjIiICYmcmVnaW9uPSJUYWljaHVuZyIg",#陕西
-  #  "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiBjaXR5PSJhbmthbmci",#安康
+    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBhc249IjM0NjIiICYmIHJlZ2lvbj0iVFci",#安康
  #   "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiBjaXR5PSJ3ZWluYW4i",#渭南
  #   "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiByZWdpb249IlNoYWFueGkiICYmIGNpdHk9Inl1bGluIg%3D%3D"#榆林
 ]
