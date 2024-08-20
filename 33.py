@@ -16,8 +16,8 @@ urls = [
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiByZWdpb249Imd1YW5nZG9uZyI%3D",  #广东
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiBjaXR5PSJHdWFuZ3pob3Ui", #广州
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiBjaXR5PSJzaGVuemhlbiI%3D",  #深圳
-    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiBjaXR5PSJodWl6aG91Ig%3D%3D"，#  惠州
-    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiBjaXR5PSJtYW9taW5nIg%3D%3D"，# 茂名
+    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiBjaXR5PSJodWl6aG91Ig%3D%3D",#  惠州
+    "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiBjaXR5PSJtYW9taW5nIg%3D%3D",# 茂名
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiBjaXR5PSJ6aHVoYWki",# 珠海
     "https://fofa.info/result?qbase64=InVkcHh5IiAmJiBvcmc9IkNoaW5hbmV0IiAmJiBjaXR5PSJzaGFudG91Ig%3D%3D"  #汕头
 
