@@ -138,7 +138,7 @@ for url in urls:
     except:
         continue
 channels = []
-with open("tv.txt", 'r', encoding='utf-8') as file:
+with open("t.txt", 'r', encoding='utf-8') as file:
     lines = file.readlines()
     for line in lines:
         #print(line)
@@ -152,7 +152,7 @@ with open("tv.txt", 'r', encoding='utf-8') as file:
 
 
 result_counter = 8  # 每个频道需要的个数
-with open("tvlist.txt", 'w', encoding='utf-8') as file:
+with open("tw.txt", 'w', encoding='utf-8') as file:
     channel_counters = {}
     file.write('央视(电信),#genre#\n')
     for channel in channels:
@@ -211,7 +211,7 @@ with open("tvlist.txt", 'w', encoding='utf-8') as file:
                 file.write(channel + "\n")
                 channel_counters[channel_name] = 1
 
-with open("itvlist.m3u", 'a', encoding='utf-8') as file:
+with open("tw.m3u", 'a', encoding='utf-8') as file:
     channel_counters = {}
     file.write('#EXTM3U\n')
     for channel in channels:
