@@ -22,8 +22,10 @@ jobs:
 
       - name: Install dependencies
       #  run: pip install selenium requests futures eventlet
-        run: pip3 install bs4
-             pip3 install requests
+        run: pip3 install requests
+        
+      - name: Install dependencies
+        run: pip3 install bs4 
 
       - name: Run a
         run: python ${{ github.workspace }}/so.py
