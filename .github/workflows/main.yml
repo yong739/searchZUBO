@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
       #  run: pip install selenium requests futures eventlet
-        run: pip3 install beautifulsoup4
+        run: pip3 install beautifulsoup4-4.12.3-py3-none-any.whl
              pip3 install requests
 
       - name: Run a
